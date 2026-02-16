@@ -1,16 +1,28 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        LookAtMouse();
         
+
     }
+
+    private void LookAtMouse()
+    {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()); //current position type shit idiot!
+        transform.up = (Vector3)(mousePos - new Vector2(transform.position.x, transform.position.y));
+    }
+
+ 
 }
