@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class lookatplayerscript : MonoBehaviour
 {
@@ -106,6 +108,12 @@ public class lookatplayerscript : MonoBehaviour
         {
             other.GetComponent<PlayerMovement>().TakingDamage(1);
         }
+
+        if (other.tag == "Bullet")
+        {
+            Debug.Log("Hit by " + other);
+            Destroy(gameObject);
+        }
     }
 
     public void TakingDamage(int damageTaken)
@@ -118,6 +126,10 @@ public class lookatplayerscript : MonoBehaviour
         }
 
     }
+
+
+
+
 
 
     private void OnDrawGizmos()
@@ -151,6 +163,8 @@ public class lookatplayerscript : MonoBehaviour
 
 
     }
+
+
 }
 
 
