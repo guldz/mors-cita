@@ -20,19 +20,21 @@ namespace TopDown.Shooting
         public void ShootBullet(Transform shootPoint)
         {
             lifeTimer = 0;
-            body.linearVelocity = Vector2.zero; //FUUUUUUUUUUUUCK //linearVelocity kanske?
+            body.linearVelocity = Vector2.zero; 
             transform.position = shootPoint.position;
             transform.rotation = shootPoint.rotation;
             gameObject.SetActive(true);
 
-            body.AddForce(-transform.up * speed, ForceMode2D.Impulse);
+            body.AddForce(transform.up * speed, ForceMode2D.Impulse);
         }
+
+
 
         private void Update()
         {
             lifeTimer += Time.deltaTime;
             if (lifeTimer >= lifetime)
-                gameObject.SetActive(false); //kanske l�gg till { efter if om inte funkar
+                gameObject.SetActive(false); 
         }
 
         private void OnTriggerEnter2D(Collider2D other)

@@ -47,6 +47,16 @@ public class PlayerMovement : MonoBehaviour
             Destroy(gameObject);
 
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+     
+        if (other.tag == "Bullet")
+        {
+            Debug.Log("Hit by " + other);
+            Destroy(gameObject);
+        }
 
     }
 }

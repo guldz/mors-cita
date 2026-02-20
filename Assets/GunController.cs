@@ -19,20 +19,23 @@ public class GunController : MonoBehaviour
         cooldownTimer += Time.deltaTime; 
     }
 
-    private void Shoot()
+
+    public void Shoot()
     {
         if (cooldownTimer < cooldown) return;
 
-        GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation, null);
+        cooldownTimer = 0f;
+
+        GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         bullet.GetComponent<Projectile>().ShootBullet(firepoint);
 
         muzzleFlashAnimator.SetTrigger("shoot");
-        Debug.Log("shoot");
-        cooldownTimer = 0; 
     }
 
+
+
     #region input 
-    private void OnShoot()
+    public void OnShoot()
     {
         Shoot(); 
     }
