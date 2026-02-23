@@ -29,6 +29,9 @@ public class GunController : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         bullet.GetComponent<Projectile>().ShootBullet(firepoint);
 
+        GameObject enemybullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+       enemybullet.GetComponent<Projectile>().ShootBullet(firepoint);
+
         muzzleFlashAnimator.SetTrigger("shoot");
     }
 

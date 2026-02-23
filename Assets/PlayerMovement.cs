@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
      
-        if (other.tag == "Bullet")
+        if (other.tag == "Enemy Bullet")
         {
             Debug.Log("Hit by " + other);
             Destroy(gameObject);

@@ -50,6 +50,13 @@ namespace TopDown.Shooting
                 Debug.Log("bullet hit wall");
                 Destroy(gameObject);
             }
+
+            if (other.tag == "Player")
+            {
+                Debug.Log("bullet hit player");
+                Destroy(gameObject);
+            }
+
         }
     }
 }
