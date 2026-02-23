@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Pathfinding;
 
 public class lookatplayerscript : MonoBehaviour
 {
@@ -22,11 +23,15 @@ public class lookatplayerscript : MonoBehaviour
 
     private Vector2 lastKnownPosition;
     private bool hasTargetPosition;
+    private AIPath ai;
 
     void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
         playerMovement = playerRef.GetComponent<PlayerMovement>();
+
+        ai = GetComponent<AIPath>();
+        ai.canMove = true; 
 
         StartCoroutine(FOVCheck());
     }
@@ -35,37 +40,30 @@ public class lookatplayerscript : MonoBehaviour
     {
         if (hasLineOfSight && playerRef != null)
         {
-            // Save last seen position
             lastKnownPosition = playerRef.transform.position;
             hasTargetPosition = true;
         }
 
         if (hasTargetPosition)
         {
-            MoveToLastKnownPosition();
-        }
-    }
-
-    private void MoveToLastKnownPosition()
-    {
-        Vector2 direction = (lastKnownPosition - (Vector2)transform.position);
-        float distance = direction.magnitude;
-
-        if (distance > stopDistance)
-        {
-            direction.Normalize();
-
-            transform.position += (Vector3)(direction * chargeSpeed * Time.deltaTime);
-
-            // Rotate toward movement
-            transform.up = direction;
+            ai.destination = lastKnownPosition;
+            ai.canMove = true;
         }
         else
         {
-            // Reached last position
-            hasTargetPosition = false;
+            ai.canMove = false;
+        }
+
+        // Rotate toward movement
+        Vector2 dir = ai.desiredVelocity;
+        if (dir != Vector2.zero)
+        {
+            transform.up = dir;
         }
     }
+
+
+   
 
     private IEnumerator FOVCheck()
     {

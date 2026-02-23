@@ -1,4 +1,4 @@
-using TopDown.Shooting;
+﻿using TopDown.Shooting;
 using UnityEngine;
 
 public class GunController : MonoBehaviour
@@ -27,13 +27,12 @@ public class GunController : MonoBehaviour
         cooldownTimer = 0f;
 
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
-        bullet.GetComponent<Projectile>().ShootBullet(firepoint);
 
-        GameObject enemybullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
-       enemybullet.GetComponent<Projectile>().ShootBullet(firepoint);
+        bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag);
 
         muzzleFlashAnimator.SetTrigger("shoot");
     }
+
 
 
 

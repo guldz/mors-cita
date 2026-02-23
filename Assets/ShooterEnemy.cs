@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Pathfinding;
 
 public class ShooterEnemy : MonoBehaviour
 {
@@ -27,8 +28,9 @@ public class ShooterEnemy : MonoBehaviour
 
     private Vector2 lastKnownPosition;
     private bool hasTargetPosition;
-   
-   
+    private AIPath ai;
+
+
 
     void Start()
     {
@@ -36,6 +38,9 @@ public class ShooterEnemy : MonoBehaviour
         playerMovement = playerRef.GetComponent<PlayerMovement>();
 
         StartCoroutine(FOVCheck());
+
+        ai = GetComponent<AIPath>();
+        ai.canMove = true;
 
         gun = GetComponentInChildren<GunController>();
     }
@@ -50,9 +55,11 @@ public class ShooterEnemy : MonoBehaviour
             lastKnownPosition = playerRef.transform.position;
             hasTargetPosition = true;
 
-            // Stop movement and aim
             Vector2 dir = (playerRef.transform.position - transform.position).normalized;
-            transform.up = dir;
+            if (dir != Vector2.zero)
+            {
+                transform.up = dir; 
+            }
 
             // Shoot
             if (shootTimer >= shootinginterval)
@@ -63,6 +70,11 @@ public class ShooterEnemy : MonoBehaviour
         }
         else
         {
+            Vector2 dir = ai.desiredVelocity;
+            if (dir != Vector2.zero)
+            {
+                transform.up = dir;
+            }
             // Player not visible → go investigate last position
             if (hasTargetPosition)
             {
@@ -89,9 +101,26 @@ public class ShooterEnemy : MonoBehaviour
         }
         else
         {
-            // Reached last position
-            hasTargetPosition = false;
+            // Player not visible → go investigate last known position
+            if (hasTargetPosition)
+            {
+                ai.destination = lastKnownPosition;
+                ai.canMove = true;
+
+                // Stop if reached last known position
+                if (Vector2.Distance(transform.position, lastKnownPosition) < stopDistance)
+                {
+                    hasTargetPosition = false;
+                    ai.canMove = false;
+                }
+            }
+            else
+            {
+                ai.canMove = false;
+            }
         }
+
+
     }
 
     private IEnumerator FOVCheck()
