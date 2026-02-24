@@ -31,6 +31,7 @@ public class GunController : MonoBehaviour
         bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag);
 
         muzzleFlashAnimator.SetTrigger("shoot");
+
     }
 
 

@@ -1250,7 +1250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShooterEnemy
   shootinginterval: 1
-  EnemyHealth: 1
   radius: 10
   angle: 90
   targetLayer:
@@ -1259,7 +1258,6 @@ MonoBehaviour:
   obstructionLayer:
     serializedVersion: 2
     m_Bits: 8
-  chargeSpeed: 6
   stopDistance: 0.2
 --- !u!114 &811513384
 MonoBehaviour:
@@ -1276,7 +1274,7 @@ MonoBehaviour:
   cooldown: 0.25
   bulletPrefab: {fileID: 7087037110203751405, guid: 1a723f0e9075a87458c35b014777ae08, type: 3}
   firepoint: {fileID: 1527947330}
-  muzzleFlashAnimator: {fileID: 0}
+  muzzleFlashAnimator: {fileID: 1926794362}
 --- !u!114 &811513386
 MonoBehaviour:
   m_ObjectHideFlags: 0

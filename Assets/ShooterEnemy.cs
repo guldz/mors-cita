@@ -1,127 +1,134 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Pathfinding;
 
 public class ShooterEnemy : MonoBehaviour
 {
+    private enum State
+    {
+        Idle,
+        Chase,
+        Attack
+    }
+
+    private State currentState;
+
     [Header("Shooting")]
-    [SerializeField] private float shootinginterval = 1.0f;
+    [SerializeField] private float shootinginterval = 1f;
     private float shootTimer;
     private GunController gun;
 
-    public int EnemyHealth = 1;
+    [Header("Vision")]
     public float radius = 10;
     [Range(1, 360)] public float angle = 45f;
-
     public LayerMask targetLayer;
     public LayerMask obstructionLayer;
 
-    public float chargeSpeed = 6f;
-    public float stopDistance = 0.2f;
+    [Header("Movement")]
+    public float stopDistance = 0.5f;
 
     private GameObject playerRef;
-    private PlayerMovement playerMovement;
-
-    public bool hasLineOfSight { get; private set; }
-
-    private Vector2 lastKnownPosition;
-    private bool hasTargetPosition;
     private AIPath ai;
 
-
+    private Vector2 lastKnownPosition;
+    private bool hasLineOfSight;
 
     void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
-        playerMovement = playerRef.GetComponent<PlayerMovement>();
+        ai = GetComponent<AIPath>();
+        gun = GetComponentInChildren<GunController>();
+
+        ai.enableRotation = false;
+
+        currentState = State.Idle;
 
         StartCoroutine(FOVCheck());
-
-        ai = GetComponent<AIPath>();
-        ai.canMove = true;
-
-        gun = GetComponentInChildren<GunController>();
     }
 
     void Update()
     {
         shootTimer += Time.deltaTime;
 
-        if (hasLineOfSight && playerRef != null)
+        switch (currentState)
         {
-            // Remember where player was
-            lastKnownPosition = playerRef.transform.position;
-            hasTargetPosition = true;
+            case State.Idle:
+                HandleIdle();
+                break;
 
-            Vector2 dir = (playerRef.transform.position - transform.position).normalized;
-            if (dir != Vector2.zero)
-            {
-                transform.up = dir; 
-            }
+            case State.Chase:
+                HandleChase();
+                break;
 
-            // Shoot
-            if (shootTimer >= shootinginterval)
-            {
-                gun.Shoot();
-                shootTimer = 0f;
-            }
-        }
-        else
-        {
-            Vector2 dir = ai.desiredVelocity;
-            if (dir != Vector2.zero)
-            {
-                transform.up = dir;
-            }
-            // Player not visible → go investigate last position
-            if (hasTargetPosition)
-            {
-                MoveToLastKnownPosition();
-            }
+            case State.Attack:
+                HandleAttack();
+                break;
         }
     }
 
+    // STATES 
 
-
-    private void MoveToLastKnownPosition()
+    void HandleIdle()
     {
-        Vector2 direction = (lastKnownPosition - (Vector2)transform.position);
-        float distance = direction.magnitude;
+        ai.canMove = false;
 
-        if (distance > stopDistance)
+        if (hasLineOfSight)
         {
-            direction.Normalize();
-
-            transform.position += (Vector3)(direction * chargeSpeed * Time.deltaTime);
-
-            // Rotate toward movement
-            transform.up = direction;
+            lastKnownPosition = playerRef.transform.position;
+            currentState = State.Attack;
         }
-        else
-        {
-            // Player not visible → go investigate last known position
-            if (hasTargetPosition)
-            {
-                ai.destination = lastKnownPosition;
-                ai.canMove = true;
-
-                // Stop if reached last known position
-                if (Vector2.Distance(transform.position, lastKnownPosition) < stopDistance)
-                {
-                    hasTargetPosition = false;
-                    ai.canMove = false;
-                }
-            }
-            else
-            {
-                ai.canMove = false;
-            }
-        }
-
-
     }
+
+    void HandleChase()
+    {
+        ai.canMove = true;
+        ai.destination = lastKnownPosition;
+
+        RotateTowards(ai.desiredVelocity);
+
+        if (hasLineOfSight)
+        {
+            currentState = State.Attack;
+            return;
+        }
+
+        if (Vector2.Distance(transform.position, lastKnownPosition) < stopDistance)
+        {
+            currentState = State.Idle;
+        }
+    }
+
+    void HandleAttack()
+    {
+        if (!hasLineOfSight)
+        {
+            currentState = State.Chase;
+            return;
+        }
+
+        ai.canMove = false;
+
+        lastKnownPosition = playerRef.transform.position;
+
+        Vector2 dir = (playerRef.transform.position - transform.position).normalized;
+        RotateTowards(dir);
+
+        if (shootTimer >= shootinginterval)
+        {
+            gun.Shoot();
+            shootTimer = 0f;
+        }
+    }
+
+    // HELPERS 
+
+    void RotateTowards(Vector2 dir)
+    {
+        if (dir != Vector2.zero)
+            transform.up = dir;
+    }
+
+    // VISION 
 
     private IEnumerator FOVCheck()
     {
@@ -136,18 +143,25 @@ public class ShooterEnemy : MonoBehaviour
 
     private void FOV()
     {
-        Collider2D[] rangeCheck = Physics2D.OverlapCircleAll(transform.position, radius, targetLayer);
+        Collider2D[] rangeCheck =
+            Physics2D.OverlapCircleAll(transform.position, radius, targetLayer);
 
         if (rangeCheck.Length > 0)
         {
             Transform target = rangeCheck[0].transform;
-            Vector2 directionToTarget = (target.position - transform.position).normalized;
+            Vector2 directionToTarget =
+                (target.position - transform.position).normalized;
 
             if (Vector2.Angle(transform.up, directionToTarget) < angle / 2)
             {
-                float distanceToTarget = Vector2.Distance(transform.position, target.position);
+                float distanceToTarget =
+                    Vector2.Distance(transform.position, target.position);
 
-                if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionLayer))
+                if (!Physics2D.Raycast(
+                        transform.position,
+                        directionToTarget,
+                        distanceToTarget,
+                        obstructionLayer))
                 {
                     hasLineOfSight = true;
                     return;
@@ -160,30 +174,13 @@ public class ShooterEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Bullet"))
         {
-            other.GetComponent<PlayerMovement>().TakingDamage(1);
+            Destroy(gameObject); 
+        } 
+        
         }
 
-        if (other.tag == "Bullet")
-        {
-            Debug.Log("Hit by " + other);
-            Destroy(gameObject);
-        }
-
-
-    }
-
-    public void TakingDamage(int damageTaken)
-    {
-        EnemyHealth = EnemyHealth - damageTaken;
-        if (EnemyHealth <= 0)
-        {
-            Destroy(gameObject);
-
-        }
-
-    }
 
     private void OnDrawGizmos()
     {
