@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private Transform torso;
+    [SerializeField] private Transform legs;
+
     public int playerHealth = 1;
     public float moveSpeed = 5f;
     Rigidbody2D rb;
@@ -15,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
         GetMovementInput();
         Move();
         LookAtMouse();
+        Move();
+        Rotatelegs(); 
     }
 
     private void GetMovementInput()
@@ -36,7 +41,17 @@ public class PlayerMovement : MonoBehaviour
     private void LookAtMouse()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        transform.up = (Vector3)(mousePos - new Vector2(transform.position.x, transform.position.y));
+        Vector2 direction = mousePos - (Vector2)torso.position;
+        torso.up = direction; 
+        //transform.up = (Vector3)(mousePos - new Vector2(transform.position.x, transform.position.y));
+    }
+
+    private void Rotatelegs()
+    {
+        if (moveInput != Vector2.zero)
+        {
+            legs.up = moveInput; 
+        }
     }
 
     public void TakingDamage(int damageTaken)

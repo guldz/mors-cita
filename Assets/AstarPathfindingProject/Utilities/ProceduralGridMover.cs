@@ -66,8 +66,9 @@ namespace Pathfinding {
 		/// </summary>
 		[HideInInspector]
 		public int graphIndex;
+        public Vector3 CurrentInput;
 
-		void Start () {
+        void Start () {
 			if (AstarPath.active == null) throw new System.Exception("There is no AstarPath object in the scene");
 
 			// If one creates this component via a script then they may have already set the graph field.
