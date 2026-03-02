@@ -4,17 +4,17 @@ using UnityEngine;
 public class LegsAnimation : MonoBehaviour
 {
     private Animator animator;
-    private PlayerMovement playerMovement;
+    private PlayerMovement PlayerMovement;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        playerMovement = GetComponentInParent<PlayerMovement>();
+        PlayerMovement = transform.parent.parent.GetComponentInParent<PlayerMovement>();
     }
 
     private void Update()
     {
-        bool isMoving = playerMovement != null && playerMovement.isMoving;
+        bool isMoving =PlayerMovement != null && PlayerMovement.isMoving;
         animator.SetBool("moving", isMoving);
     }
 }

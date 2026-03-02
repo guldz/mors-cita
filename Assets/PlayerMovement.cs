@@ -9,10 +9,15 @@ public class PlayerMovement : MonoBehaviour
     public int playerHealth = 1;
     public float moveSpeed = 5f;
     Rigidbody2D rb;
-    public bool isMoving => rb.linearVelocity.magnitude > 0.1f;
+    public bool isMoving = false; 
+    
 
     private Vector2 moveInput;
-
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>(); 
+        
+    }
     void Update()
     {
         GetMovementInput();
@@ -74,5 +79,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
+
 }
 
