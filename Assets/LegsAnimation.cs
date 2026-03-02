@@ -16,5 +16,6 @@ public class LegsAnimation : MonoBehaviour
     {
         bool isMoving =PlayerMovement != null && PlayerMovement.isMoving;
         animator.SetBool("moving", isMoving);
+        
     }
 }

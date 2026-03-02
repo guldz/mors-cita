@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         if (Keyboard.current.dKey.isPressed) moveInput += Vector2.right;
 
         moveInput = moveInput.normalized;
+        isMoving = moveInput != Vector2.zero; 
     }
 
     private void Move()

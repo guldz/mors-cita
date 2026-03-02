@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: 87068bdaaafcf8a46842680211d3f8eb
+guid: 1c09021a2738c99458b9de0526bc35e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1408707161573286213
-    second: top down legs-Sheet_0
+      213: -7873660710064871871
+    second: top down legs-Shee2t_0
   - first:
-      213: -8975491724614928510
-    second: top down legs-Sheet_1
+      213: 5658927131220097616
+    second: top down legs-Shee2t_1
   - first:
-      213: -5219136752577881295
-    second: top down legs-Sheet_2
+      213: 3120887540808579319
+    second: top down legs-Shee2t_2
   - first:
-      213: -6342271891583440372
-    second: top down legs-Sheet_3
+      213: -5775962595362185308
+    second: top down legs-Shee2t_3
   - first:
-      213: 7183481571025993667
-    second: top down legs-Sheet_4
+      213: 6556573284020415830
+    second: top down legs-Shee2t_4
   - first:
-      213: -7388795462471763935
-    second: top down legs-Sheet_5
+      213: -4824010201924830603
+    second: top down legs-Shee2t_5
   - first:
-      213: -6646260537483973586
-    second: top down legs-Sheet_6
+      213: 2575648931236188149
+    second: top down legs-Shee2t_6
   - first:
-      213: 7989242425577266697
-    second: top down legs-Sheet_7
+      213: 2519756306951951697
+    second: top down legs-Shee2t_7
   - first:
-      213: -6268562273440872690
-    second: top down legs-Sheet_8
+      213: -6629636851849775881
+    second: top down legs-Shee2t_8
   - first:
-      213: 6872544348504609059
-    second: top down legs-Sheet_9
+      213: -4550452786061549762
+    second: top down legs-Shee2t_9
   - first:
-      213: -3170065005736460575
-    second: top down legs-Sheet_10
+      213: 1462645427495304203
+    second: top down legs-Shee2t_10
   - first:
-      213: 5042071579359881474
-    second: top down legs-Sheet_11
+      213: 8966632341866349404
+    second: top down legs-Shee2t_11
   - first:
-      213: 7654045676324099080
-    second: top down legs-Sheet_12
+      213: 8976918199459312700
+    second: top down legs-Shee2t_12
   - first:
-      213: 8626372187355535806
-    second: top down legs-Sheet_13
+      213: -633449548241907835
+    second: top down legs-Shee2t_13
   - first:
-      213: -7513468168623561707
-    second: top down legs-Sheet_14
+      213: -1903032009079100770
+    second: top down legs-Shee2t_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: top down legs-Sheet_0
+      name: top down legs-Shee2t_0
       rect:
         serializedVersion: 2
         x: 0
@@ -157,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 541ef1623bbbc8310800000000000000
-      internalID: 1408707161573286213
+      spriteID: 14622a6fc432bb290800000000000000
+      internalID: -7873660710064871871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_1
+      name: top down legs-Shee2t_1
       rect:
         serializedVersion: 2
         x: 32
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2877ed5a4d5a07380800000000000000
-      internalID: -8975491724614928510
+      spriteID: 05ab13a5e3c888e40800000000000000
+      internalID: 5658927131220097616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_2
+      name: top down legs-Shee2t_2
       rect:
         serializedVersion: 2
         x: 64
@@ -201,14 +201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13bd86496c6e197b0800000000000000
-      internalID: -5219136752577881295
+      spriteID: 7f876d5eeae9f4b20800000000000000
+      internalID: 3120887540808579319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_3
+      name: top down legs-Shee2t_3
       rect:
         serializedVersion: 2
         x: 96
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0a69314159bbf7a0800000000000000
-      internalID: -6342271891583440372
+      spriteID: 4af5e733f98a7dfa0800000000000000
+      internalID: -5775962595362185308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_4
+      name: top down legs-Shee2t_4
       rect:
         serializedVersion: 2
         x: 128
@@ -245,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cfb19bdd6ad0b360800000000000000
-      internalID: 7183481571025993667
+      spriteID: 65d6ad1e9a0adfa50800000000000000
+      internalID: 6556573284020415830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_5
+      name: top down legs-Shee2t_5
       rect:
         serializedVersion: 2
         x: 160
@@ -265,16 +265,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1283a55aca9b57990800000000000000
-      internalID: -7388795462471763935
+      spriteID: ea13f750e3ea19b43839548fea899518
+      internalID: -4824010201924830603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_6
+      name: top down legs-Shee2t_6
       rect:
         serializedVersion: 2
         x: 192
@@ -287,16 +287,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e2c229a214db3c3a0800000000000000
-      internalID: -6646260537483973586
+      spriteID: 0fea2b549e6fa8b429f43e2057630809
+      internalID: 2575648931236188149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_7
+      name: top down legs-Shee2t_7
       rect:
         serializedVersion: 2
         x: 224
@@ -309,16 +309,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90e530148ad7fde60800000000000000
-      internalID: 7989242425577266697
+      spriteID: 47d52d52bd08e614da68457df0d35b5c
+      internalID: 2519756306951951697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_8
+      name: top down legs-Shee2t_8
       rect:
         serializedVersion: 2
         x: 256
@@ -331,16 +331,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e07442713d79109a0800000000000000
-      internalID: -6268562273440872690
+      spriteID: c5cbd1bb2170b9d46a3fd459b18aff5b
+      internalID: -6629636851849775881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down legs-Sheet_9
+      name: top down legs-Shee2t_9
       rect:
         serializedVersion: 2
         x: 288
@@ -353,10 +353,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3215cb33cae206f50800000000000000
-      internalID: 6872544348504609059
+      spriteID: 0a8ba827dfccbe841a5e442111ecbbea
+      internalID: -4550452786061549762
       vertices: []
       indices: 
       edges: []
@@ -365,7 +365,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 778d4440ceb1fc3418a98bf2ac6baf8e
+    spriteID: 9eefbc2bd50b5f442a4ec56c36c1c27e
     internalID: 0
     vertices: []
     indices: 
@@ -375,18 +375,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      top down legs-Sheet_0: 1408707161573286213
-      top down legs-Sheet_1: -8975491724614928510
-      top down legs-Sheet_2: -5219136752577881295
-      top down legs-Sheet_3: -6342271891583440372
-      top down legs-Sheet_4: 7183481571025993667
-      top down legs-Sheet_5: -7388795462471763935
-      top down legs-Sheet_6: -6646260537483973586
-      top down legs-Sheet_7: 7989242425577266697
-      top down legs-Sheet_8: -6268562273440872690
-      top down legs-Sheet_9: 6872544348504609059
+      top down legs-Shee2t_0: -7873660710064871871
+      top down legs-Shee2t_1: 5658927131220097616
+      top down legs-Shee2t_2: 3120887540808579319
+      top down legs-Shee2t_3: -5775962595362185308
+      top down legs-Shee2t_4: 6556573284020415830
+      top down legs-Shee2t_5: -4824010201924830603
+      top down legs-Shee2t_6: 2575648931236188149
+      top down legs-Shee2t_7: 2519756306951951697
+      top down legs-Shee2t_8: -6629636851849775881
+      top down legs-Shee2t_9: -4550452786061549762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
