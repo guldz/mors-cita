@@ -1988,8 +1988,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0031622134, y: -0.03415628}
-  m_Radius: 0.13363497
+  m_Offset: {x: -0.010581864, y: -0.0015595423}
+  m_Radius: 0.11640065
 --- !u!114 &1836918909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,6 +2127,7 @@ GameObject:
   - component: {fileID: 1926794360}
   - component: {fileID: 1926794362}
   - component: {fileID: 1926794361}
+  - component: {fileID: 1926794363}
   m_Layer: 6
   m_Name: MuzzleFlashAnimator
   m_TagString: Untagged
@@ -2201,7 +2202,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -2217,7 +2218,7 @@ Animator:
   m_GameObject: {fileID: 1926794359}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 54ff846908faee44999d854efa88e827, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2229,6 +2230,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1926794363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926794359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2611e4dccd0e66945a3cf7a5aeab2c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &2004850037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,7 +2267,7 @@ Transform:
   m_GameObject: {fileID: 2004850037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.014, y: 0.258, z: 0}
+  m_LocalPosition: {x: 0.014, y: 0.275, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
