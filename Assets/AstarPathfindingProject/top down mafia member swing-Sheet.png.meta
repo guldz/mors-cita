@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: f057620cb4bff384bbabaa6716a2c253
+guid: ca2f89c09869bad4295dc2c7f15b2161
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2294921079125502331
-    second: top down mafia member swing-Sheet-Sheet_0
+      213: -5093123864832298997
+    second: top down mafia member swing-Sheet_0
   - first:
-      213: -8162593004573494791
-    second: top down mafia member swing-Sheet-Sheet_1
+      213: -9123298055273537917
+    second: top down mafia member swing-Sheet_1
   - first:
-      213: 6222625021807717951
-    second: top down mafia member swing-Sheet-Sheet_2
+      213: -3815823168224080209
+    second: top down mafia member swing-Sheet_2
   - first:
-      213: -32683278422391586
-    second: top down mafia member swing-Sheet-Sheet_3
+      213: 4220758050203805890
+    second: top down mafia member swing-Sheet_3
   - first:
-      213: -4395448717569620334
-    second: top down mafia member swing-Sheet-Sheet_4
+      213: -7434577143351300695
+    second: top down mafia member swing-Sheet_4
   - first:
-      213: -6455572468064424320
-    second: top down mafia member swing-Sheet-Sheet_5
+      213: 4309628837490225371
+    second: top down mafia member swing-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,133 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: top down mafia member swing-Sheet-Sheet_0
+      name: top down mafia member swing-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49999988, y: 0.4760503}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5861b23007dc620e0800000000000000
-      internalID: -2294921079125502331
+      spriteID: b003b9754d69159b0800000000000000
+      internalID: -5093123864832298997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down mafia member swing-Sheet-Sheet_1
+      name: top down mafia member swing-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49999988, y: 0.4761805}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f1fe4cd8e4a8be80800000000000000
-      internalID: -8162593004573494791
+      spriteID: 38e986b81c8836180800000000000000
+      internalID: -9123298055273537917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down mafia member swing-Sheet-Sheet_2
+      name: top down mafia member swing-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50207067, y: 0.4751522}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3e6e4b0d743b5650800000000000000
-      internalID: 6222625021807717951
+      spriteID: fae4c4cab097b0bc0800000000000000
+      internalID: -3815823168224080209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down mafia member swing-Sheet-Sheet_3
+      name: top down mafia member swing-Sheet_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5017514, y: 0.47723013}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed4c98f3bb2eb8ff0800000000000000
-      internalID: -32683278422391586
+      spriteID: 2c8a4498515239a30800000000000000
+      internalID: 4220758050203805890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down mafia member swing-Sheet-Sheet_4
+      name: top down mafia member swing-Sheet_4
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50177145, y: 0.47696874}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29601d0fdaa3003c0800000000000000
-      internalID: -4395448717569620334
+      spriteID: 9adae4b6a7313d890800000000000000
+      internalID: -7434577143351300695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: top down mafia member swing-Sheet-Sheet_5
+      name: top down mafia member swing-Sheet_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49999952, y: 0.47367874}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08e6a3b1b033966a0800000000000000
-      internalID: -6455572468064424320
+      spriteID: bd072642890eecb30800000000000000
+      internalID: 4309628837490225371
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9943b43e2a2c87940887b26221af126e
+    spriteID: 4901dbbeaee429349969b1bc57e4441e
     internalID: 0
     vertices: []
     indices: 
@@ -262,12 +262,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      top down mafia member swing-Sheet-Sheet_0: -2294921079125502331
-      top down mafia member swing-Sheet-Sheet_1: -8162593004573494791
-      top down mafia member swing-Sheet-Sheet_2: 6222625021807717951
-      top down mafia member swing-Sheet-Sheet_3: -32683278422391586
-      top down mafia member swing-Sheet-Sheet_4: -4395448717569620334
-      top down mafia member swing-Sheet-Sheet_5: -6455572468064424320
+      top down mafia member swing-Sheet_0: -5093123864832298997
+      top down mafia member swing-Sheet_1: -9123298055273537917
+      top down mafia member swing-Sheet_2: -3815823168224080209
+      top down mafia member swing-Sheet_3: 4220758050203805890
+      top down mafia member swing-Sheet_4: -7434577143351300695
+      top down mafia member swing-Sheet_5: 4309628837490225371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,6 +6,8 @@ using Pathfinding;
 
 public class lookatplayerscript : MonoBehaviour
 {
+    public bool eMoving;
+
     public int EnemyHealth = 1;
     public float radius = 10;
     [Range(1, 360)] public float angle = 45f;
@@ -53,6 +55,8 @@ public class lookatplayerscript : MonoBehaviour
         {
             ai.canMove = false;
         }
+
+        eMoving = ai.velocity.magnitude > 0.1f;
 
         // Rotate toward movement
         Vector2 dir = ai.desiredVelocity;
