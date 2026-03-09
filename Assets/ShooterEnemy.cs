@@ -33,6 +33,8 @@ public class ShooterEnemy : MonoBehaviour
     private Vector2 lastKnownPosition;
     private bool hasLineOfSight;
 
+    public bool shMove; 
+
     void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
@@ -63,7 +65,10 @@ public class ShooterEnemy : MonoBehaviour
             case State.Attack:
                 HandleAttack();
                 break;
+
+
         }
+        shMove = ai.velocity.magnitude > 0.1f;
     }
 
     // STATES 
@@ -96,6 +101,8 @@ public class ShooterEnemy : MonoBehaviour
         {
             currentState = State.Idle;
         }
+
+        
     }
 
     void HandleAttack()
@@ -116,6 +123,7 @@ public class ShooterEnemy : MonoBehaviour
         if (shootTimer >= shootinginterval)
         {
             gun.Shoot();
+            transform.GetChild(0).GetComponent<MafiaGunnerAnimation>().GunnerShoot_ani();
             shootTimer = 0f;
         }
     }
