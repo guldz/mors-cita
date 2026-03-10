@@ -6,6 +6,7 @@ using Pathfinding;
 
 public class lookatplayerscript : MonoBehaviour
 {
+    public SwingAnimation meleeSwing; 
     public bool eMoving;
 
     public int EnemyHealth = 1;
@@ -33,7 +34,7 @@ public class lookatplayerscript : MonoBehaviour
         playerMovement = playerRef.GetComponent<PlayerMovement>();
 
         ai = GetComponent<AIPath>();
-        ai.canMove = true; 
+        ai.canMove = true;
 
         StartCoroutine(FOVCheck());
     }
@@ -67,7 +68,7 @@ public class lookatplayerscript : MonoBehaviour
     }
 
 
-   
+
 
     private IEnumerator FOVCheck()
     {
@@ -109,6 +110,10 @@ public class lookatplayerscript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<PlayerMovement>().TakingDamage(1);
+            if (meleeSwing != null)
+            {
+                meleeSwing.PlaySwing();
+            }
         }
 
         if (other.tag == "Bullet")
@@ -116,6 +121,8 @@ public class lookatplayerscript : MonoBehaviour
             Debug.Log("Hit by " + other);
             Destroy(gameObject);
         }
+
+
     }
 
     public void TakingDamage(int damageTaken)
@@ -128,10 +135,6 @@ public class lookatplayerscript : MonoBehaviour
         }
 
     }
-
-
-
-
 
 
     private void OnDrawGizmos()

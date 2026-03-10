@@ -33,10 +33,12 @@ public class ShooterEnemy : MonoBehaviour
     private Vector2 lastKnownPosition;
     private bool hasLineOfSight;
 
-    public bool shMove; 
+    public bool shMove;
+    private enemyflash gunFlash;
 
     void Start()
     {
+        gunFlash = GetComponentInChildren<enemyflash>(); 
         playerRef = GameObject.FindGameObjectWithTag("Player");
         ai = GetComponent<AIPath>();
         gun = GetComponentInChildren<GunController>();
@@ -68,7 +70,7 @@ public class ShooterEnemy : MonoBehaviour
 
 
         }
-        shMove = ai.velocity.magnitude > 0.1f;
+        shMove = ai.canMove && ai.desiredVelocity.magnitude > 0.1f;
     }
 
     // STATES 
@@ -124,6 +126,9 @@ public class ShooterEnemy : MonoBehaviour
         {
             gun.Shoot();
             transform.GetChild(0).GetComponent<MafiaGunnerAnimation>().GunnerShoot_ani();
+            if (gunFlash != null)
+                gunFlash.PlayFlash();
+
             shootTimer = 0f;
         }
     }
