@@ -5,6 +5,10 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Transform torso;
     [SerializeField] private Transform legs;
+    [SerializeField] private Animator animator;
+    private bool isDead = false;
+    public bool IsDead => isDead; 
+
 
     public int playerHealth = 1;
     public float moveSpeed = 5f;
@@ -17,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>(); 
         
+    }
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
@@ -62,24 +70,56 @@ public class PlayerMovement : MonoBehaviour
 
     public void TakingDamage(int damageTaken)
     {
-        playerHealth = playerHealth - damageTaken;
-        if (playerHealth <= 0)
-        {
-            Destroy(gameObject);
+        if (isDead) return;
 
-        }
+        isDead = true;
+
+        animator.SetTrigger("Die");
+
+        // destroy torso so gun disappears
+        Destroy(torso.gameObject);
+
+        // disable shooting
+        GunController gun = GetComponentInChildren<GunController>();
+        if (gun != null)
+            gun.enabled = false;
+
+        // disable collider so enemies stop hitting the corpse
+        GetComponent<Collider2D>().enabled = false;
+
+        // Disable player movement
+        this.enabled = false;
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-     
-        if (other.tag == "Enemy Bullet")
+        if (other.CompareTag("Enemy Bullet"))
         {
-            Debug.Log("Hit by " + other);
-            Destroy(gameObject);
-        }
+            if (isDead) return;
 
+            Debug.Log("bullet hit");
+
+            isDead = true;
+
+            // Play death animation
+            animator.SetTrigger("Die");
+
+            // Destroy torso so the gun disappears
+            Destroy(torso.gameObject);
+
+            // Disable shooting
+            GunController gun = GetComponentInChildren<GunController>();
+            if (gun != null)
+                gun.enabled = false;
+
+            // Disable player movement
+            this.enabled = false;
+        }
     }
+
+
+
 
 
 }

@@ -12,6 +12,8 @@ public class GunController : MonoBehaviour
     [SerializeField] private Transform firepoint;
     [SerializeField] private Animator muzzleFlashAnimator;
 
+
+
     //shoot point
 
     private void Update()
@@ -31,6 +33,7 @@ public class GunController : MonoBehaviour
         bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag);
 
         muzzleFlashAnimator.SetTrigger("shoot");
+
 
     }
 

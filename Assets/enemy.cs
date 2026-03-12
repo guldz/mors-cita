@@ -41,6 +41,12 @@ public class lookatplayerscript : MonoBehaviour
 
     void Update()
     {
+        if (playerMovement != null && playerMovement.IsDead)
+        {
+            ai.canMove = false; 
+            return; 
+        }
+
         if (hasLineOfSight && playerRef != null)
         {
             lastKnownPosition = playerRef.transform.position;
@@ -107,14 +113,20 @@ public class lookatplayerscript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerMovement>().TakingDamage(1);
-            if (meleeSwing != null)
+            PlayerMovement player = other.GetComponent<PlayerMovement>();
+
+            if (player != null && !player.IsDead)
             {
-                meleeSwing.PlaySwing();
+                player.TakingDamage(1);
+
+                if (meleeSwing != null)
+                    meleeSwing.PlaySwing();
             }
         }
+
 
         if (other.tag == "Bullet")
         {
