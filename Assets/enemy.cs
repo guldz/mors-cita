@@ -1,8 +1,9 @@
+using Pathfinding;
 using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Pathfinding;
+using UnityEngine.WSA;
 
 public class lookatplayerscript : MonoBehaviour
 {
@@ -28,6 +29,16 @@ public class lookatplayerscript : MonoBehaviour
     private bool hasTargetPosition;
     private AIPath ai;
 
+
+
+    private Animator animator;
+    public GameObject torso; 
+    private Collider2D enemyCollider;
+
+
+    private bool mafiaDead = false;
+    public bool MafiaDead => mafiaDead;
+
     void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
@@ -36,8 +47,12 @@ public class lookatplayerscript : MonoBehaviour
         ai = GetComponent<AIPath>();
         ai.canMove = true;
 
+        animator = GetComponent<Animator>();
+        enemyCollider = GetComponent<Collider2D>();
+
         StartCoroutine(FOVCheck());
     }
+
 
     void Update()
     {
@@ -128,25 +143,44 @@ public class lookatplayerscript : MonoBehaviour
         }
 
 
-        if (other.tag == "Bullet")
+        if (other.CompareTag("Bullet"))
         {
-            Debug.Log("Hit by " + other);
-            Destroy(gameObject);
+            if (mafiaDead) return;
+
+            Debug.Log("bullet hit");
+
+            mafiaDead = true;
+
+            // Remove bullet
+            Destroy(other.gameObject);
+
+            // Stop movement
+            ai.canMove = false;
+            this.enabled = false; // disables this script AFTER current frame
+
+            // Disable gun
+            GunController gun = GetComponentInChildren<GunController>();
+            if (gun != null)
+                gun.enabled = false;
+
+            // Disable collider so it doesn't get hit again
+            if (enemyCollider != null)
+                enemyCollider.enabled = false;
+
+            // Play death animation
+            if (animator != null)
+                animator.SetTrigger("MafiaDie");
+
+            // Optional: destroy torso (ONLY if you really want this)
+            if (torso != null)
+            Destroy(torso);
+
+            
         }
-
-
     }
 
-    public void TakingDamage(int damageTaken)
-    {
-        EnemyHealth = EnemyHealth - damageTaken;
-        if (EnemyHealth <= 0)
-        {
-            Destroy(gameObject);
 
-        }
 
-    }
 
 
     private void OnDrawGizmos()

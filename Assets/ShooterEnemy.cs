@@ -1,6 +1,7 @@
-﻿using System.Collections;
+﻿using Pathfinding;
+using System.Collections;
+using System.Diagnostics;
 using UnityEngine;
-using Pathfinding;
 
 public class ShooterEnemy : MonoBehaviour
 {
@@ -36,6 +37,13 @@ public class ShooterEnemy : MonoBehaviour
     public bool shMove;
     private enemyflash gunFlash;
 
+    private Animator animator;
+    public GameObject torso;
+    private Collider2D enemyCollider;
+
+    private bool shdead = false;
+    public bool SHdead => shdead;
+
     void Start()
     {
         gunFlash = GetComponentInChildren<enemyflash>(); 
@@ -48,6 +56,10 @@ public class ShooterEnemy : MonoBehaviour
         currentState = State.Idle;
 
         StartCoroutine(FOVCheck());
+
+        animator = GetComponentInChildren<Animator>(); 
+        enemyCollider = GetComponent<Collider2D>();
+
     }
 
     void Update()
@@ -185,14 +197,45 @@ public class ShooterEnemy : MonoBehaviour
         hasLineOfSight = false;
     }
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Bullet"))
         {
-            Destroy(gameObject); 
-        } 
-        
+            if (shdead) return;
+
+            shdead = true;
+
+            // Remove bullet
+            Destroy(other.gameObject);
+
+            // Stop AI movement
+            if (ai != null)
+                ai.canMove = false;
+
+            // Disable AIPath completely (optional but good)
+            if (ai != null)
+                ai.enabled = false;
+
+            // Disable gun
+            if (gun != null)
+                gun.enabled = false;
+
+            // Disable collider so corpse doesn't keep reacting
+            if (enemyCollider != null)
+                enemyCollider.enabled = false;
+
+            // Play death animation
+            if (animator != null)
+                animator.SetTrigger("SHdead");
+
+            // Stop this script so it doesn't keep updating states
+            this.enabled = false;
         }
+    }
+
+
+
 
 
     private void OnDrawGizmos()
