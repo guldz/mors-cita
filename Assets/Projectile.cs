@@ -43,6 +43,8 @@ namespace TopDown.Shooting
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            
+
             // ignore whoever fired the bullet (same team)
             if (other.CompareTag(ownerTag))
                 return;

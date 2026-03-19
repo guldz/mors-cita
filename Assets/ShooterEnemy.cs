@@ -213,7 +213,7 @@ public class ShooterEnemy : MonoBehaviour
             if (ai != null)
                 ai.canMove = false;
 
-            // Disable AIPath completely (optional but good)
+            // Disable AIPath completely 
             if (ai != null)
                 ai.enabled = false;
 
