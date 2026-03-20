@@ -138,8 +138,7 @@ public class ShooterEnemy : MonoBehaviour
         {
             gun.Shoot();
             transform.GetChild(0).GetComponent<MafiaGunnerAnimation>().GunnerShoot_ani();
-            if (gunFlash != null)
-                gunFlash.PlayFlash();
+            
 
             shootTimer = 0f;
         }

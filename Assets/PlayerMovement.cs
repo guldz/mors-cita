@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,8 +14,13 @@ public class PlayerMovement : MonoBehaviour
     public int playerHealth = 1;
     public float moveSpeed = 5f;
     Rigidbody2D rb;
-    public bool isMoving = false; 
-    
+    public bool isMoving = false;
+    [SerializeField] float dashForce = 20f;
+    [SerializeField] float dashDuration = 0.2f;
+    [SerializeField] float dashCooldown = 0f; 
+    private bool isDashing = false;
+    private bool isInvincible = false;
+
 
     private Vector2 moveInput;
     private void Start()
@@ -32,7 +38,9 @@ public class PlayerMovement : MonoBehaviour
         Move();
         LookAtMouse();
         Move();
-        Rotatelegs(); 
+        Rotatelegs();
+        Dash();
+
     }
 
     private void GetMovementInput()
@@ -50,6 +58,34 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         transform.position += (Vector3)(moveInput * moveSpeed * Time.deltaTime);
+    }
+
+    IEnumerator DashCoroutine()
+    {
+        isDashing = true;
+        isInvincible = true;
+
+        rb.linearVelocity = moveInput * dashForce;
+
+        yield return new WaitForSeconds(dashDuration);
+
+        rb.linearVelocity = Vector2.zero;
+        isDashing = false;
+        isInvincible = false;
+    }
+
+    void Dash()
+    {
+        if (isMoving && dashCooldown <= 0 && !isDashing)
+        {
+            if (Keyboard.current.leftShiftKey.wasPressedThisFrame)
+            {
+                StartCoroutine(DashCoroutine());
+                dashCooldown = 5f;
+            }
+        }
+
+        dashCooldown -= Time.deltaTime;
     }
 
     private void LookAtMouse()
@@ -70,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void TakingDamage(int damageTaken)
     {
-        if (isDead) return;
+        if (isDead || isInvincible) return;
 
         isDead = true;
 
@@ -96,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Enemy Bullet"))
         {
-            if (isDead) return;
+            if (isDead || isInvincible) return;
 
             Debug.Log("bullet hit");
 

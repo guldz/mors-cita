@@ -11,11 +11,8 @@ public class MuzzleFlash : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    public void PlayFlash()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            animator.SetTrigger("flash");
-        }
+        animator.SetTrigger("flash");
     }
 }
