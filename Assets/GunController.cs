@@ -1,4 +1,4 @@
-﻿using TMPro;
+using TMPro;
 using TopDown.Shooting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -21,11 +21,21 @@ public class GunController : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firepoint;
     [SerializeField] private Animator muzzleFlashAnimator;
+    [SerializeField] private string muzzleFlashTrigger = "shoot";
     [SerializeField] private MuzzleFlash muzzleFlash;
 
 
 
     //shoot point
+
+    private void Awake()
+    {
+        // Discard any muzzleFlash reference that doesn't belong to this GameObject's hierarchy.
+        // This prevents a stale cross-reference (e.g. pointing at the player) from triggering
+        // the wrong flash when this GunController is used on an enemy.
+        if (muzzleFlash != null && !muzzleFlash.transform.IsChildOf(transform))
+            muzzleFlash = null;
+    }
 
     private void Start()
     {
@@ -59,10 +69,10 @@ public class GunController : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag);
 
-        muzzleFlashAnimator.SetTrigger("shoot");
+        muzzleFlashAnimator.SetTrigger(muzzleFlashTrigger);
 
-        //  ONLY plays when a real shot happens
-        if (muzzleFlash != null)
+        // Only call PlayFlash if the MuzzleFlash belongs to this GameObject's own hierarchy.
+        if (muzzleFlash != null && muzzleFlash.transform.IsChildOf(transform))
             muzzleFlash.PlayFlash();
 
         if (useAmmo)
