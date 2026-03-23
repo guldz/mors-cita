@@ -39,6 +39,8 @@ public class lookatplayerscript : MonoBehaviour
     private bool mafiaDead = false;
     public bool MafiaDead => mafiaDead;
 
+    private const int DeadSortingOrder = 0;
+
     void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
@@ -171,6 +173,9 @@ public class lookatplayerscript : MonoBehaviour
             if (animator != null)
                 animator.SetTrigger("MafiaDie");
 
+            // Push dead body behind living entities after the animator ticks
+            StartCoroutine(ApplyDeadSortingOrder());
+
             // Optional: destroy torso (ONLY if you really want this)
             if (torso != null)
             Destroy(torso);
@@ -182,6 +187,14 @@ public class lookatplayerscript : MonoBehaviour
 
 
 
+
+    /// <summary>Waits one frame then forces all child SpriteRenderers behind living entities.</summary>
+    private IEnumerator ApplyDeadSortingOrder()
+    {
+        yield return null;
+        foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>())
+            sr.sortingOrder = DeadSortingOrder;
+    }
 
     private void OnDrawGizmos()
     {

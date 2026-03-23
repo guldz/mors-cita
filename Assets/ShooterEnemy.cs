@@ -1,4 +1,4 @@
-﻿using Pathfinding;
+using Pathfinding;
 using System.Collections;
 using System.Diagnostics;
 using UnityEngine;
@@ -43,6 +43,8 @@ public class ShooterEnemy : MonoBehaviour
 
     private bool shdead = false;
     public bool SHdead => shdead;
+
+    private const int DeadSortingOrder = 0;
 
     void Start()
     {
@@ -228,9 +230,20 @@ public class ShooterEnemy : MonoBehaviour
             if (animator != null)
                 animator.SetTrigger("SHdead");
 
+            // Push dead body behind living entities after the animator ticks
+            StartCoroutine(ApplyDeadSortingOrder());
+
             // Stop this script so it doesn't keep updating states
             this.enabled = false;
         }
+    }
+
+    /// <summary>Waits one frame then forces all child SpriteRenderers behind living entities.</summary>
+    private IEnumerator ApplyDeadSortingOrder()
+    {
+        yield return null;
+        foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>())
+            sr.sortingOrder = DeadSortingOrder;
     }
 
 

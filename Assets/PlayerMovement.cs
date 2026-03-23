@@ -8,7 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform legs;
     [SerializeField] private Animator animator;
     private bool isDead = false;
-    public bool IsDead => isDead; 
+    public bool IsDead => isDead;
+
+    private const int DeadSortingOrder = 0;
 
 
     public int playerHealth = 1;
@@ -112,6 +114,9 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetTrigger("Die");
 
+        // Push dead body behind living entities
+        StartCoroutine(ApplyDeadSortingOrder());
+
         // destroy torso so gun disappears
         Destroy(torso.gameObject);
 
@@ -141,6 +146,9 @@ public class PlayerMovement : MonoBehaviour
             // Play death animation
             animator.SetTrigger("Die");
 
+            // Push dead body behind living entities
+            StartCoroutine(ApplyDeadSortingOrder());
+
             // Destroy torso so the gun disappears
             Destroy(torso.gameObject);
 
@@ -152,6 +160,14 @@ public class PlayerMovement : MonoBehaviour
             // Disable player movement
             this.enabled = false;
         }
+    }
+
+    /// <summary>Waits one frame then forces all SpriteRenderers behind living entities.</summary>
+    private System.Collections.IEnumerator ApplyDeadSortingOrder()
+    {
+        yield return null;
+        foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>())
+            sr.sortingOrder = DeadSortingOrder;
     }
 
 
