@@ -23,6 +23,7 @@ public class GunController : MonoBehaviour
     [SerializeField] private Animator muzzleFlashAnimator;
     [SerializeField] private string muzzleFlashTrigger = "shoot";
     [SerializeField] private MuzzleFlash muzzleFlash;
+    [SerializeField] private Animator animator;
 
 
 
@@ -48,9 +49,10 @@ public class GunController : MonoBehaviour
         cooldownTimer += Time.deltaTime;
 
         // Reload input
-        if (Keyboard.current.rKey.isPressed)
+        if (Keyboard.current.rKey.wasPressedThisFrame)
         {
             Reload();
+            animator.SetTrigger("Reload");
         }
     }
 
