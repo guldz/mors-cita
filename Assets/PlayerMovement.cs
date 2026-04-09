@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
             if (Keyboard.current.leftShiftKey.wasPressedThisFrame)
             {
                 StartCoroutine(DashCoroutine());
-                dashCooldown = 5f;
+                dashCooldown = 3f;
             }
         }
 
