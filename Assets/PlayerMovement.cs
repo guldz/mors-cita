@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     private const int DeadSortingOrder = 0;
 
+    
+
 
     public int playerHealth = 1;
     public float moveSpeed = 5f;
