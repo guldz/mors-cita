@@ -1,5 +1,6 @@
 using TMPro;
 using TopDown.Shooting;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -25,7 +26,8 @@ public class GunController : MonoBehaviour
     [SerializeField] private MuzzleFlash muzzleFlash;
     [SerializeField] private Animator animator;
 
-
+    [Header("Camera Shake")]
+    [SerializeField] private CinemachineImpulseSource impulseSource;
 
     //shoot point
 
@@ -73,12 +75,19 @@ public class GunController : MonoBehaviour
 
         muzzleFlashAnimator.SetTrigger(muzzleFlashTrigger);
 
+        // Camera shake
+        if (impulseSource != null)
+            impulseSource.GenerateImpulse();
+
+
         // Only call PlayFlash if the MuzzleFlash belongs to this GameObject's own hierarchy.
         if (muzzleFlash != null && muzzleFlash.transform.IsChildOf(transform))
             muzzleFlash.PlayFlash();
 
         if (useAmmo)
             UpdateUI();
+
+        
     }
 
     public void Reload()

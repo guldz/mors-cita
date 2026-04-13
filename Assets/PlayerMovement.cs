@@ -1,6 +1,9 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using Unity.Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,25 +15,26 @@ public class PlayerMovement : MonoBehaviour
 
     private const int DeadSortingOrder = 0;
 
-    
 
 
+   
     public int playerHealth = 1;
     public float moveSpeed = 5f;
     Rigidbody2D rb;
     public bool isMoving = false;
     [SerializeField] float dashForce = 20f;
     [SerializeField] float dashDuration = 0.2f;
-    [SerializeField] float dashCooldown = 0f; 
+    [SerializeField] float dashCooldown = 0f;
     private bool isDashing = false;
     private bool isInvincible = false;
 
+    public GameObject gameOverScreen;
 
     private Vector2 moveInput;
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); 
-        
+        rb = GetComponent<Rigidbody2D>();
+
     }
     private void Awake()
     {
@@ -56,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if (Keyboard.current.dKey.isPressed) moveInput += Vector2.right;
 
         moveInput = moveInput.normalized;
-        isMoving = moveInput != Vector2.zero; 
+        isMoving = moveInput != Vector2.zero;
     }
 
     private void Move()
@@ -96,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         Vector2 direction = mousePos - (Vector2)torso.position;
-        torso.up = direction; 
+        torso.up = direction;
         //transform.up = (Vector3)(mousePos - new Vector2(transform.position.x, transform.position.y));
     }
 
@@ -104,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (moveInput != Vector2.zero)
         {
-            legs.up = moveInput; 
+            legs.up = moveInput;
         }
     }
 
@@ -132,6 +136,10 @@ public class PlayerMovement : MonoBehaviour
 
         // Disable player movement
         this.enabled = false;
+
+        gameOverScreen.SetActive(true);
+
+
     }
 
 
@@ -161,6 +169,8 @@ public class PlayerMovement : MonoBehaviour
 
             // Disable player movement
             this.enabled = false;
+
+            gameOverScreen.SetActive(true);
         }
     }
 
@@ -172,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
             sr.sortingOrder = DeadSortingOrder;
     }
 
-
+ 
 
 
 
