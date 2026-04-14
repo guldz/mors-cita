@@ -14,8 +14,7 @@ public class Gunnerlegs : MonoBehaviour
 
     private void Update()
     {
-        bool shMove = gunnerlegs != null && gunnerlegs.shMove;
+        bool shMove = gunnerlegs != null && !gunnerlegs.SHdead && gunnerlegs.shMove;
         animator.SetBool("shMove", shMove);
-
     }
 }
