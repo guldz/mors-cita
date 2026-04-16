@@ -31,6 +31,8 @@ public class GunController : MonoBehaviour
 
     //shoot point
 
+    private PlayerMovement ownerPlayer;
+
     private void Awake()
     {
         // Discard any muzzleFlash reference that doesn't belong to this GameObject's hierarchy.
@@ -44,6 +46,9 @@ public class GunController : MonoBehaviour
     {
         currentAmmo = maxAmmo;
         UpdateUI();
+
+        // Non-null only when this controller belongs to the player's hierarchy.
+        ownerPlayer = GetComponentInParent<PlayerMovement>();
     }
 
     private void Update()
@@ -71,7 +76,7 @@ public class GunController : MonoBehaviour
             currentAmmo--;
 
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
-        bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag);
+        bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag, ownerPlayer, impulseSource);
 
         muzzleFlashAnimator.SetTrigger(muzzleFlashTrigger);
 

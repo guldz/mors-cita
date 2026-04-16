@@ -96,6 +96,12 @@ public class PlayerMovement : MonoBehaviour
         dashCooldown -= Time.deltaTime;
     }
 
+    /// <summary>Resets the dash cooldown, allowing an immediate dash.</summary>
+    public void ResetDashCooldown()
+    {
+        dashCooldown = 0f;
+    }
+
     private void LookAtMouse()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());

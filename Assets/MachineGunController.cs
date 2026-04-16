@@ -1,5 +1,6 @@
 using TMPro;
 using TopDown.Shooting;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -25,6 +26,11 @@ public class MachineGunController : MonoBehaviour
     [SerializeField] private MuzzleFlash muzzleFlash;
     [SerializeField] private Animator animator;
 
+    [Header("Camera Shake")]
+    [SerializeField] private CinemachineImpulseSource impulseSource;
+
+    private PlayerMovement ownerPlayer;
+
     private void Awake()
     {
         // Discard any muzzleFlash reference that doesn't belong to this GameObject's hierarchy.
@@ -38,6 +44,9 @@ public class MachineGunController : MonoBehaviour
     {
         currentAmmo = maxAmmo;
         UpdateUI();
+
+        // Non-null only when this controller belongs to the player's hierarchy.
+        ownerPlayer = GetComponentInParent<PlayerMovement>();
     }
 
     private void Update()
@@ -66,9 +75,13 @@ public class MachineGunController : MonoBehaviour
             currentAmmo--;
 
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
-        bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag);
+        bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag, ownerPlayer, impulseSource);
 
         muzzleFlashAnimator.SetTrigger(muzzleFlashTrigger);
+
+        // Camera shake on shoot
+        if (impulseSource != null)
+            impulseSource.GenerateImpulse();
 
         // Only call PlayFlash if the MuzzleFlash belongs to this GameObject's own hierarchy.
         if (muzzleFlash != null && muzzleFlash.transform.IsChildOf(transform))

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+using Unity.Cinemachine;
+using UnityEngine;
 
 namespace TopDown.Shooting
 {
@@ -14,6 +15,10 @@ namespace TopDown.Shooting
 
         
         private string ownerTag;
+        private PlayerMovement ownerPlayer;
+        private CinemachineImpulseSource ownerImpulseSource;
+
+        private static readonly Vector3 HitImpulseVelocity = new Vector3(0.5f, 0.5f, 0f);
 
         private void Awake()
         {
@@ -21,9 +26,11 @@ namespace TopDown.Shooting
         }
 
         
-        public void ShootBullet(Transform shootPoint, string owner)
+        public void ShootBullet(Transform shootPoint, string owner, PlayerMovement player = null, CinemachineImpulseSource impulseSource = null)
         {
-            ownerTag = owner;   // owner
+            ownerTag = owner;
+            ownerPlayer = player;
+            ownerImpulseSource = impulseSource;
 
             lifeTimer = 0;
             body.linearVelocity = Vector2.zero;
@@ -52,6 +59,8 @@ namespace TopDown.Shooting
             if (other.CompareTag("enemy"))
             {
                 Debug.Log("Hit: " + other);
+                ownerPlayer?.ResetDashCooldown();
+                ownerImpulseSource?.GenerateImpulse(HitImpulseVelocity);
                 Destroy(gameObject);
             }
 

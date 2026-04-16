@@ -63136,6 +63136,7 @@ MonoBehaviour:
   muzzleFlashTrigger: Mflash
   muzzleFlash: {fileID: 0}
   animator: {fileID: 0}
+  impulseSource: {fileID: 0}
 --- !u!114 &443973326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68004,6 +68005,7 @@ MonoBehaviour:
   muzzleFlashTrigger: Mflash
   muzzleFlash: {fileID: 0}
   animator: {fileID: 0}
+  impulseSource: {fileID: 0}
 --- !u!114 &868226143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70353,7 +70355,7 @@ Transform:
   m_GameObject: {fileID: 1063309218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -101.59, y: 232.43, z: -10}
+  m_LocalPosition: {x: -40.2, y: 212.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70958,6 +70960,7 @@ GameObject:
   - component: {fileID: 1125258823}
   - component: {fileID: 1125258822}
   - component: {fileID: 1125258821}
+  - component: {fileID: 1125258824}
   m_Layer: 0
   m_Name: The Boss
   m_TagString: Untagged
@@ -71060,6 +71063,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.263}
+--- !u!61 &1125258824
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125258820}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.042464018, y: -1.2638034}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8, y: 10.375}
+    newSize: {x: 1.28, y: 1.66}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.9213219, y: 2.045191}
+  m_EdgeRadius: 0
 --- !u!1 &1127487506
 GameObject:
   m_ObjectHideFlags: 0
@@ -71841,7 +71890,7 @@ Transform:
   m_GameObject: {fileID: 1152642451}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.002115216, w: 0.9999978}
-  m_LocalPosition: {x: -101.59, y: 232.43, z: 0}
+  m_LocalPosition: {x: -40.2, y: 212.8, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -71900,7 +71949,7 @@ MonoBehaviour:
     DissipationMode: 2
     DissipationDistance: 100
     PropagationSpeed: 343
-  DefaultVelocity: {x: 0.5, y: 0.5, z: 0.5}
+  DefaultVelocity: {x: 0.1, y: 0.1, z: 0.5}
 --- !u!1 &1172549797
 GameObject:
   m_ObjectHideFlags: 0
@@ -73386,6 +73435,7 @@ MonoBehaviour:
   muzzleFlashTrigger: Mflash
   muzzleFlash: {fileID: 0}
   animator: {fileID: 0}
+  impulseSource: {fileID: 0}
 --- !u!114 &1402862969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81197,6 +81247,7 @@ MonoBehaviour:
   muzzleFlashTrigger: Mflash
   muzzleFlash: {fileID: 0}
   animator: {fileID: 0}
+  impulseSource: {fileID: 0}
 --- !u!114 &2052592231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82769,7 +82820,7 @@ Transform:
   m_GameObject: {fileID: 2111920545}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -101.59, y: 232.43, z: -10}
+  m_LocalPosition: {x: -40.2, y: 212.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
