@@ -46032,6 +46032,7 @@ MonoBehaviour:
   muzzleFlashTrigger: Mflash
   muzzleFlash: {fileID: 0}
   animator: {fileID: 0}
+  impulseSource: {fileID: 0}
 --- !u!114 &833703384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52254,7 +52255,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -52494,7 +52495,7 @@ MonoBehaviour:
     DissipationMode: 2
     DissipationDistance: 100
     PropagationSpeed: 343
-  DefaultVelocity: {x: 0.5, y: 0.5, z: 0.5}
+  DefaultVelocity: {x: 0.1, y: 0.1, z: 0.5}
 --- !u!1 &1632690973
 GameObject:
   m_ObjectHideFlags: 0
