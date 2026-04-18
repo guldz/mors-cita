@@ -64242,7 +64242,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.7601814, y: -1.2125168}
+  m_Offset: {x: 0.6755657, y: -1.2125168}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -64252,7 +64252,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.0154495, y: 13.395645}
+  m_Size: {x: 4.184681, y: 13.395645}
   m_EdgeRadius: 0
 --- !u!4 &475363983
 Transform:
@@ -64262,12 +64262,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475363980}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -78.75556, y: 238.0999, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7087277, w: 0.7054822}
+  m_LocalPosition: {x: -0.9497357, y: -10.930036, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1193508058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &515034096
 GameObject:
@@ -70852,7 +70852,7 @@ Transform:
   m_GameObject: {fileID: 1063309218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -74.9, y: 235.1, z: -10}
+  m_LocalPosition: {x: -47.38, y: 105.85, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72527,7 +72527,7 @@ Transform:
   m_GameObject: {fileID: 1152642451}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.002115216, w: 0.9999978}
-  m_LocalPosition: {x: -74.9, y: 235.1, z: 0}
+  m_LocalPosition: {x: -47.38, y: 105.85, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -73155,7 +73155,7 @@ GameObject:
   - component: {fileID: 1193508060}
   - component: {fileID: 1193508059}
   m_Layer: 7
-  m_Name: boss gets his fucking head blown out
+  m_Name: boss die1
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73175,6 +73175,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1939799404}
+  - {fileID: 475363983}
   m_Father: {fileID: 709478205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1193508059
@@ -73197,7 +73198,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193508057}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -80682,7 +80683,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.000042319298, y: 1.6424984}
+  m_Offset: {x: -0.019795656, y: 1.7202926}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -80692,7 +80693,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9996545, y: 2.7862532}
+  m_Size: {x: 2.0438142, y: 2.9418416}
   m_EdgeRadius: 0
 --- !u!1 &1941083545
 GameObject:
@@ -82453,7 +82454,7 @@ Transform:
   m_GameObject: {fileID: 2052592229}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.71282434, w: 0.7013427}
-  m_LocalPosition: {x: -81.31, y: 235.11, z: 0}
+  m_LocalPosition: {x: -81.09, y: 235.12, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -83801,7 +83802,7 @@ Transform:
   m_GameObject: {fileID: 2111920545}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -74.9, y: 235.1, z: -10}
+  m_LocalPosition: {x: -47.38, y: 105.85, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -84582,4 +84583,3 @@ SceneRoots:
   - {fileID: 1856579080}
   - {fileID: 1944718720}
   - {fileID: 1125258823}
-  - {fileID: 475363983}
