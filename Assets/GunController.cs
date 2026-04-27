@@ -29,7 +29,10 @@ public class GunController : MonoBehaviour
     [Header("Camera Shake")]
     [SerializeField] private CinemachineImpulseSource impulseSource;
 
-    //shoot point
+    private bool canShoot = true;
+
+    /// <summary>Prevents any further shots from being fired.</summary>
+    public void DisableShooting() => canShoot = false;
 
     private PlayerMovement ownerPlayer;
 
@@ -66,6 +69,7 @@ public class GunController : MonoBehaviour
 
     public void Shoot()
     {
+        if (!canShoot) return;
         if (cooldownTimer < cooldown) return;
 
         if (useAmmo && currentAmmo <= 0) return;

@@ -180,6 +180,33 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Freezes the player for the boss-kill explosion sequence.
+    /// Disables legs and gun without destroying the torso or showing the game over screen.
+    /// </summary>
+    public void FreezeForBoom()
+    {
+        if (isDead) return;
+
+        isDead = true;
+
+        // Disable legs so the player cannot move or rotate them
+        if (legs != null)
+            legs.gameObject.SetActive(false);
+
+        // Disable shooting via the canShoot guard so Input System callbacks can't fire a shot
+        GunController gun = GetComponentInChildren<GunController>();
+        if (gun != null)
+            gun.DisableShooting();
+
+        MachineGunController machineGun = GetComponentInChildren<MachineGunController>();
+        if (machineGun != null)
+            machineGun.DisableShooting();
+
+        // Freeze movement
+        this.enabled = false;
+    }
+
     /// <summary>Waits one frame then forces all SpriteRenderers behind living entities.</summary>
     private System.Collections.IEnumerator ApplyDeadSortingOrder()
     {
