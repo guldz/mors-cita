@@ -1240,7 +1240,7 @@ MonoBehaviour:
   eMoving: 0
   EnemyHealth: 1
   radius: 11.5
-  angle: 90
+  angle: 182
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -42982,7 +42982,7 @@ MonoBehaviour:
   eMoving: 0
   EnemyHealth: 1
   radius: 10
-  angle: 90
+  angle: 184
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -49735,7 +49735,7 @@ MonoBehaviour:
   eMoving: 0
   EnemyHealth: 1
   radius: 10
-  angle: 90
+  angle: 179
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -53158,7 +53158,7 @@ MonoBehaviour:
   eMoving: 0
   EnemyHealth: 1
   radius: 10
-  angle: 90
+  angle: 170
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -57670,7 +57670,7 @@ MonoBehaviour:
   eMoving: 0
   EnemyHealth: 1
   radius: 10
-  angle: 90
+  angle: 168
   targetLayer:
     serializedVersion: 2
     m_Bits: 64

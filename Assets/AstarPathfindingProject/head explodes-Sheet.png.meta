@@ -1,0 +1,2412 @@
+fileFormatVersion: 2
+guid: 4c24d7f36f836f145a820b7d7223d1d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2703965455787793537
+    second: head explodes-Sheet_0
+  - first:
+      213: -3245078918175146935
+    second: head explodes-Sheet_1
+  - first:
+      213: 1009140664926899215
+    second: head explodes-Sheet_2
+  - first:
+      213: 6078556939351074523
+    second: head explodes-Sheet_3
+  - first:
+      213: 8457292798563098011
+    second: head explodes-Sheet_4
+  - first:
+      213: -3737778647201451362
+    second: head explodes-Sheet_5
+  - first:
+      213: -161467807842391970
+    second: head explodes-Sheet_6
+  - first:
+      213: -1189673494640256572
+    second: head explodes-Sheet_7
+  - first:
+      213: -3451436121876337179
+    second: head explodes-Sheet_8
+  - first:
+      213: 2681761392866487117
+    second: head explodes-Sheet_9
+  - first:
+      213: 5844964167417919274
+    second: head explodes-Sheet_10
+  - first:
+      213: 5701741212990626082
+    second: head explodes-Sheet_11
+  - first:
+      213: -3107302527016890120
+    second: head explodes-Sheet_12
+  - first:
+      213: 2639001891146702077
+    second: head explodes-Sheet_13
+  - first:
+      213: 2071825163651818239
+    second: head explodes-Sheet_14
+  - first:
+      213: 3073906755038002387
+    second: head explodes-Sheet_15
+  - first:
+      213: -3290412875222264276
+    second: head explodes-Sheet_16
+  - first:
+      213: 2355879717986426609
+    second: head explodes-Sheet_17
+  - first:
+      213: -2714090203213495951
+    second: head explodes-Sheet_18
+  - first:
+      213: -6818514689585216477
+    second: head explodes-Sheet_19
+  - first:
+      213: -3313970598379744868
+    second: head explodes-Sheet_20
+  - first:
+      213: -7864832058243809211
+    second: head explodes-Sheet_21
+  - first:
+      213: -1536509843696621997
+    second: head explodes-Sheet_22
+  - first:
+      213: 6494358942950133987
+    second: head explodes-Sheet_23
+  - first:
+      213: -1568022498649766746
+    second: head explodes-Sheet_24
+  - first:
+      213: 3038843608194996039
+    second: head explodes-Sheet_25
+  - first:
+      213: -4239937663891069166
+    second: head explodes-Sheet_26
+  - first:
+      213: -1094402579973724155
+    second: head explodes-Sheet_27
+  - first:
+      213: -2250567609389460429
+    second: head explodes-Sheet_28
+  - first:
+      213: -3551897549280011250
+    second: head explodes-Sheet_29
+  - first:
+      213: 4983066443035107173
+    second: head explodes-Sheet_30
+  - first:
+      213: 4686595230363827014
+    second: head explodes-Sheet_31
+  - first:
+      213: 4493779655063821572
+    second: head explodes-Sheet_32
+  - first:
+      213: -5013041114763582513
+    second: head explodes-Sheet_33
+  - first:
+      213: 5085417818912192170
+    second: head explodes-Sheet_34
+  - first:
+      213: -8413555815929106012
+    second: head explodes-Sheet_35
+  - first:
+      213: -4319484525219007180
+    second: head explodes-Sheet_36
+  - first:
+      213: -7402700892742906922
+    second: head explodes-Sheet_37
+  - first:
+      213: -5283443137072112282
+    second: head explodes-Sheet_38
+  - first:
+      213: 7361077942115012648
+    second: head explodes-Sheet_39
+  - first:
+      213: -8401435980160291585
+    second: head explodes-Sheet_40
+  - first:
+      213: -3027838108903302124
+    second: head explodes-Sheet_41
+  - first:
+      213: -2619434033325507035
+    second: head explodes-Sheet_42
+  - first:
+      213: 6414287013975530582
+    second: head explodes-Sheet_43
+  - first:
+      213: 5290476412193925808
+    second: head explodes-Sheet_44
+  - first:
+      213: -7416026259465943337
+    second: head explodes-Sheet_45
+  - first:
+      213: 8432968980893904055
+    second: head explodes-Sheet_46
+  - first:
+      213: 2612950711118625192
+    second: head explodes-Sheet_47
+  - first:
+      213: 5932553863615621442
+    second: head explodes-Sheet_48
+  - first:
+      213: 6572587056022203148
+    second: head explodes-Sheet_49
+  - first:
+      213: -7654019496256915781
+    second: head explodes-Sheet_50
+  - first:
+      213: -6666307454032947974
+    second: head explodes-Sheet_51
+  - first:
+      213: 3171768344560725010
+    second: head explodes-Sheet_52
+  - first:
+      213: -3345453558592010242
+    second: head explodes-Sheet_53
+  - first:
+      213: 5613159616923788211
+    second: head explodes-Sheet_54
+  - first:
+      213: -8460163776959305881
+    second: head explodes-Sheet_55
+  - first:
+      213: -1818562327032947175
+    second: head explodes-Sheet_56
+  - first:
+      213: 4775959150766718581
+    second: head explodes-Sheet_57
+  - first:
+      213: -2619062728665067725
+    second: head explodes-Sheet_58
+  - first:
+      213: 6131751318014659515
+    second: head explodes-Sheet_59
+  - first:
+      213: -3281437811817975069
+    second: head explodes-Sheet_60
+  - first:
+      213: -3351529542379997078
+    second: head explodes-Sheet_61
+  - first:
+      213: 5450243414818751951
+    second: head explodes-Sheet_62
+  - first:
+      213: 975088464475151421
+    second: head explodes-Sheet_63
+  - first:
+      213: -4170319823935242619
+    second: head explodes-Sheet_64
+  - first:
+      213: 624540007275884510
+    second: head explodes-Sheet_65
+  - first:
+      213: -6949764277252985167
+    second: head explodes-Sheet_66
+  - first:
+      213: -8372818613774129582
+    second: head explodes-Sheet_67
+  - first:
+      213: 7061265290483659313
+    second: head explodes-Sheet_68
+  - first:
+      213: 1004424943704083371
+    second: head explodes-Sheet_69
+  - first:
+      213: 2776782344413332730
+    second: head explodes-Sheet_70
+  - first:
+      213: 7487727287716522331
+    second: head explodes-Sheet_71
+  - first:
+      213: -5377402285822538871
+    second: head explodes-Sheet_72
+  - first:
+      213: 3591185178848227157
+    second: head explodes-Sheet_73
+  - first:
+      213: -9131810361284813285
+    second: head explodes-Sheet_74
+  - first:
+      213: -6529840146149862537
+    second: head explodes-Sheet_75
+  - first:
+      213: 5795830531598082917
+    second: head explodes-Sheet_76
+  - first:
+      213: 5127938411048204333
+    second: head explodes-Sheet_77
+  - first:
+      213: -1058886236958815635
+    second: head explodes-Sheet_78
+  - first:
+      213: 3945921782860618638
+    second: head explodes-Sheet_79
+  - first:
+      213: -8632820867077621818
+    second: head explodes-Sheet_80
+  - first:
+      213: 5039281898991558595
+    second: head explodes-Sheet_81
+  - first:
+      213: 1158657855427033222
+    second: head explodes-Sheet_82
+  - first:
+      213: 1968582591569133198
+    second: head explodes-Sheet_83
+  - first:
+      213: 8600777749208371226
+    second: head explodes-Sheet_84
+  - first:
+      213: -202272449651765035
+    second: head explodes-Sheet_85
+  - first:
+      213: -9216320982371386737
+    second: head explodes-Sheet_86
+  - first:
+      213: -3137587167262112991
+    second: head explodes-Sheet_87
+  - first:
+      213: 5278955066529595488
+    second: head explodes-Sheet_88
+  - first:
+      213: -1333269615613709109
+    second: head explodes-Sheet_89
+  - first:
+      213: -2040249599192706523
+    second: head explodes-Sheet_90
+  - first:
+      213: -512734285006389148
+    second: head explodes-Sheet_91
+  - first:
+      213: -4900397061007359113
+    second: head explodes-Sheet_92
+  - first:
+      213: -101183090487301026
+    second: head explodes-Sheet_93
+  - first:
+      213: -5842954896521202892
+    second: head explodes-Sheet_94
+  - first:
+      213: 4492566138621048492
+    second: head explodes-Sheet_95
+  - first:
+      213: -1916204085650529503
+    second: head explodes-Sheet_96
+  - first:
+      213: -4618555580896687963
+    second: head explodes-Sheet_97
+  - first:
+      213: 6423513516173689686
+    second: head explodes-Sheet_98
+  - first:
+      213: -3693058730109020047
+    second: head explodes-Sheet_99
+  - first:
+      213: 8403084982649172667
+    second: head explodes-Sheet_100
+  - first:
+      213: 3823049075878521274
+    second: head explodes-Sheet_101
+  - first:
+      213: -2584968389158428074
+    second: head explodes-Sheet_102
+  - first:
+      213: 374673024961170274
+    second: head explodes-Sheet_103
+  - first:
+      213: -4795871952984451728
+    second: head explodes-Sheet_104
+  - first:
+      213: -4432832108261057155
+    second: head explodes-Sheet_105
+  - first:
+      213: 1161207564021287631
+    second: head explodes-Sheet_106
+  - first:
+      213: -4312806302807904281
+    second: head explodes-Sheet_107
+  - first:
+      213: 3159279945640581464
+    second: head explodes-Sheet_108
+  - first:
+      213: -3010977971449153522
+    second: head explodes-Sheet_109
+  - first:
+      213: -5848261055499872074
+    second: head explodes-Sheet_110
+  - first:
+      213: 8790908915574577811
+    second: head explodes-Sheet_111
+  - first:
+      213: -8935366345951303600
+    second: head explodes-Sheet_112
+  - first:
+      213: -8915425906261894322
+    second: head explodes-Sheet_113
+  - first:
+      213: -2440070167465367032
+    second: head explodes-Sheet_114
+  - first:
+      213: 8807085182457140186
+    second: head explodes-Sheet_115
+  - first:
+      213: 3850441895951548072
+    second: head explodes-Sheet_116
+  - first:
+      213: 738921654476133126
+    second: head explodes-Sheet_117
+  - first:
+      213: 4968299677258869292
+    second: head explodes-Sheet_118
+  - first:
+      213: -4588702282814558608
+    second: head explodes-Sheet_119
+  - first:
+      213: 4618685200785226916
+    second: head explodes-Sheet_120
+  - first:
+      213: -2631165295936710843
+    second: head explodes-Sheet_121
+  - first:
+      213: -1729076354645137266
+    second: head explodes-Sheet_122
+  - first:
+      213: -8248718213798190202
+    second: head explodes-Sheet_123
+  - first:
+      213: -6357283949135927071
+    second: head explodes-Sheet_124
+  - first:
+      213: -1460890787616379540
+    second: head explodes-Sheet_125
+  - first:
+      213: -5465887642966032468
+    second: head explodes-Sheet_126
+  - first:
+      213: -35485370494484838
+    second: head explodes-Sheet_127
+  - first:
+      213: 8104081171102511533
+    second: head explodes-Sheet_128
+  - first:
+      213: -4335738759763374476
+    second: head explodes-Sheet_129
+  - first:
+      213: -6628936920668986576
+    second: head explodes-Sheet_130
+  - first:
+      213: 1541724979171974054
+    second: head explodes-Sheet_131
+  - first:
+      213: -7480840674135374316
+    second: head explodes-Sheet_132
+  - first:
+      213: 7917414645725083334
+    second: head explodes-Sheet_133
+  - first:
+      213: 2790573997749474544
+    second: head explodes-Sheet_134
+  - first:
+      213: 1619834488733081767
+    second: head explodes-Sheet_135
+  - first:
+      213: 1776279044951179402
+    second: head explodes-Sheet_136
+  - first:
+      213: -1892751233811815128
+    second: head explodes-Sheet_137
+  - first:
+      213: -4328113758895554064
+    second: head explodes-Sheet_138
+  - first:
+      213: -7845291779416466086
+    second: head explodes-Sheet_139
+  - first:
+      213: 4904585176456993368
+    second: head explodes-Sheet_140
+  - first:
+      213: -6445802283779137071
+    second: head explodes-Sheet_141
+  - first:
+      213: -1487264367759851998
+    second: head explodes-Sheet_142
+  - first:
+      213: 5141245681416170375
+    second: head explodes-Sheet_143
+  - first:
+      213: -8882822076062936393
+    second: head explodes-Sheet_144
+  - first:
+      213: -3245648124220250449
+    second: head explodes-Sheet_145
+  - first:
+      213: -5435036298188820471
+    second: head explodes-Sheet_146
+  - first:
+      213: 1304305855570151146
+    second: head explodes-Sheet_147
+  - first:
+      213: 629481431316765592
+    second: head explodes-Sheet_148
+  - first:
+      213: 1451377635384174684
+    second: head explodes-Sheet_149
+  - first:
+      213: -4041436980958812400
+    second: head explodes-Sheet_150
+  - first:
+      213: 8667321563142650693
+    second: head explodes-Sheet_151
+  - first:
+      213: -4928516097332192098
+    second: head explodes-Sheet_152
+  - first:
+      213: -4509360049585036490
+    second: head explodes-Sheet_153
+  - first:
+      213: -3602076093797410682
+    second: head explodes-Sheet_154
+  - first:
+      213: -6948022908978428378
+    second: head explodes-Sheet_155
+  - first:
+      213: -215198499522839260
+    second: head explodes-Sheet_156
+  - first:
+      213: -168604017340384429
+    second: head explodes-Sheet_157
+  - first:
+      213: -3132686849880483666
+    second: head explodes-Sheet_158
+  - first:
+      213: -5046381354769426561
+    second: head explodes-Sheet_159
+  - first:
+      213: 3330046120880903922
+    second: head explodes-Sheet_160
+  - first:
+      213: 1368274184271092318
+    second: head explodes-Sheet_161
+  - first:
+      213: 7016327014844352058
+    second: head explodes-Sheet_162
+  - first:
+      213: -2439678744708586883
+    second: head explodes-Sheet_163
+  - first:
+      213: -4574356759058572155
+    second: head explodes-Sheet_164
+  - first:
+      213: 9083266810440734248
+    second: head explodes-Sheet_165
+  - first:
+      213: 5329815012687759354
+    second: head explodes-Sheet_166
+  - first:
+      213: 3017796454569304372
+    second: head explodes-Sheet_167
+  - first:
+      213: 4492732585290122146
+    second: head explodes-Sheet_168
+  - first:
+      213: -3895454572917658358
+    second: head explodes-Sheet_169
+  - first:
+      213: 4691879056034959740
+    second: head explodes-Sheet_170
+  - first:
+      213: 4856011935465483572
+    second: head explodes-Sheet_171
+  - first:
+      213: -9138345147941883603
+    second: head explodes-Sheet_172
+  - first:
+      213: -8895435716933403208
+    second: head explodes-Sheet_173
+  - first:
+      213: 8192508999065238548
+    second: head explodes-Sheet_174
+  - first:
+      213: 4788532751605980467
+    second: head explodes-Sheet_175
+  - first:
+      213: -1905058421006182479
+    second: head explodes-Sheet_176
+  - first:
+      213: 3724945204095971205
+    second: head explodes-Sheet_177
+  - first:
+      213: -1316976249463513039
+    second: head explodes-Sheet_178
+  - first:
+      213: -8951889350356837132
+    second: head explodes-Sheet_179
+  - first:
+      213: 8442855150127781598
+    second: head explodes-Sheet_180
+  - first:
+      213: -7472004196229923987
+    second: head explodes-Sheet_181
+  - first:
+      213: -4613758184972453387
+    second: head explodes-Sheet_182
+  - first:
+      213: 1145046615540032832
+    second: head explodes-Sheet_183
+  - first:
+      213: -3230338641724094255
+    second: head explodes-Sheet_184
+  - first:
+      213: -4141401448265173623
+    second: head explodes-Sheet_185
+  - first:
+      213: 657644442414234860
+    second: head explodes-Sheet_186
+  - first:
+      213: 6553823932001122891
+    second: head explodes-Sheet_187
+  - first:
+      213: -8700317037793591707
+    second: head explodes-Sheet_188
+  - first:
+      213: -3978258484799308771
+    second: head explodes-Sheet_189
+  - first:
+      213: 19530502396509521
+    second: head explodes-Sheet_190
+  - first:
+      213: -5960386220322848078
+    second: head explodes-Sheet_191
+  - first:
+      213: -4046667361158576271
+    second: head explodes-Sheet_192
+  - first:
+      213: 7962374457478248429
+    second: head explodes-Sheet_193
+  - first:
+      213: 2095622115851553051
+    second: head explodes-Sheet_194
+  - first:
+      213: -7354513551554960698
+    second: head explodes-Sheet_195
+  - first:
+      213: 6104473196406219661
+    second: head explodes-Sheet_196
+  - first:
+      213: -2840917785440492115
+    second: head explodes-Sheet_197
+  - first:
+      213: 7141506182926040982
+    second: head explodes-Sheet_198
+  - first:
+      213: -6464920851346060284
+    second: head explodes-Sheet_199
+  - first:
+      213: -6860125512374220680
+    second: head explodes-Sheet_200
+  - first:
+      213: 2018274722790422511
+    second: head explodes-Sheet_201
+  - first:
+      213: -4581856028609338318
+    second: head explodes-Sheet_202
+  - first:
+      213: 6143959597069647247
+    second: head explodes-Sheet_203
+  - first:
+      213: -939067731400940651
+    second: head explodes-Sheet_204
+  - first:
+      213: 582940177970614342
+    second: head explodes-Sheet_205
+  - first:
+      213: 6287318969794771502
+    second: head explodes-Sheet_206
+  - first:
+      213: -8854881982519062347
+    second: head explodes-Sheet_207
+  - first:
+      213: -1390738753497499743
+    second: head explodes-Sheet_208
+  - first:
+      213: 3580912275241385366
+    second: head explodes-Sheet_209
+  - first:
+      213: 4150233444376174216
+    second: head explodes-Sheet_210
+  - first:
+      213: -7804430334847074240
+    second: head explodes-Sheet_211
+  - first:
+      213: 6791592670233496610
+    second: head explodes-Sheet_212
+  - first:
+      213: 790271402781341448
+    second: head explodes-Sheet_213
+  - first:
+      213: -7847916833988844515
+    second: head explodes-Sheet_214
+  - first:
+      213: 708879693060913459
+    second: head explodes-Sheet_215
+  - first:
+      213: 5853178781207500586
+    second: head explodes-Sheet_216
+  - first:
+      213: 46937480184966524
+    second: head explodes-Sheet_217
+  - first:
+      213: 6332862547427984181
+    second: head explodes-Sheet_218
+  - first:
+      213: 7551365602503538301
+    second: head explodes-Sheet_219
+  - first:
+      213: -4221268443281903800
+    second: head explodes-Sheet_220
+  - first:
+      213: 5360576457052610365
+    second: head explodes-Sheet_221
+  - first:
+      213: 1623462447583477176
+    second: head explodes-Sheet_222
+  - first:
+      213: -5991424767660326580
+    second: head explodes-Sheet_223
+  - first:
+      213: -2064359723896237178
+    second: head explodes-Sheet_224
+  - first:
+      213: -6390698383170760889
+    second: head explodes-Sheet_225
+  - first:
+      213: 363154607960927616
+    second: head explodes-Sheet_226
+  - first:
+      213: 4649805593346919024
+    second: head explodes-Sheet_227
+  - first:
+      213: -2773174857873489920
+    second: head explodes-Sheet_228
+  - first:
+      213: 7024640174119511932
+    second: head explodes-Sheet_229
+  - first:
+      213: -7949870837601159509
+    second: head explodes-Sheet_230
+  - first:
+      213: -1011591933626475249
+    second: head explodes-Sheet_231
+  - first:
+      213: 7806127068703667062
+    second: head explodes-Sheet_232
+  - first:
+      213: -3598510751961247505
+    second: head explodes-Sheet_233
+  - first:
+      213: 9000453627165915460
+    second: head explodes-Sheet_234
+  - first:
+      213: -4619566715779270138
+    second: head explodes-Sheet_235
+  - first:
+      213: -481794879044473429
+    second: head explodes-Sheet_236
+  - first:
+      213: 4661081425299153932
+    second: head explodes-Sheet_237
+  - first:
+      213: 384239186898529952
+    second: head explodes-Sheet_238
+  - first:
+      213: 2992294413790656065
+    second: head explodes-Sheet_239
+  - first:
+      213: 2393819344295774074
+    second: head explodes-Sheet_240
+  - first:
+      213: 678084637469353184
+    second: head explodes-Sheet_241
+  - first:
+      213: -169860220200584290
+    second: head explodes-Sheet_242
+  - first:
+      213: 2047269000238961503
+    second: head explodes-Sheet_243
+  - first:
+      213: 2282829119836517665
+    second: head explodes-Sheet_244
+  - first:
+      213: -4948272571164294941
+    second: head explodes-Sheet_245
+  - first:
+      213: 4267096251551857954
+    second: head explodes-Sheet_246
+  - first:
+      213: -672290054660876003
+    second: head explodes-Sheet_247
+  - first:
+      213: 7399924505983691405
+    second: head explodes-Sheet_248
+  - first:
+      213: -32018767658416818
+    second: head explodes-Sheet_249
+  - first:
+      213: 2969844720432704841
+    second: head explodes-Sheet_250
+  - first:
+      213: 1817385840733046162
+    second: head explodes-Sheet_251
+  - first:
+      213: -3542040985500082399
+    second: head explodes-Sheet_252
+  - first:
+      213: 6614391112518133690
+    second: head explodes-Sheet_253
+  - first:
+      213: 7414030902138870439
+    second: head explodes-Sheet_254
+  - first:
+      213: -488175374581300508
+    second: head explodes-Sheet_255
+  - first:
+      213: -6349694478184675508
+    second: head explodes-Sheet_256
+  - first:
+      213: 685004429175069044
+    second: head explodes-Sheet_257
+  - first:
+      213: 7648976761726056063
+    second: head explodes-Sheet_258
+  - first:
+      213: 5566301254107111219
+    second: head explodes-Sheet_259
+  - first:
+      213: 8185090790776007522
+    second: head explodes-Sheet_260
+  - first:
+      213: -6891899486445422940
+    second: head explodes-Sheet_261
+  - first:
+      213: -943135081013877279
+    second: head explodes-Sheet_262
+  - first:
+      213: 5198400768807713362
+    second: head explodes-Sheet_263
+  - first:
+      213: -1881680095850437200
+    second: head explodes-Sheet_264
+  - first:
+      213: 2556847071743624307
+    second: head explodes-Sheet_265
+  - first:
+      213: -4019921423751450018
+    second: head explodes-Sheet_266
+  - first:
+      213: 7429357235324392665
+    second: head explodes-Sheet_267
+  - first:
+      213: 8925884098271547512
+    second: head explodes-Sheet_268
+  - first:
+      213: -8953917562766671056
+    second: head explodes-Sheet_269
+  - first:
+      213: -7755996519475408872
+    second: head explodes-Sheet_270
+  - first:
+      213: 7998382320253385205
+    second: head explodes-Sheet_271
+  - first:
+      213: 6318131011467940818
+    second: head explodes-Sheet_272
+  - first:
+      213: 534491298636718530
+    second: head explodes-Sheet_273
+  - first:
+      213: 4667249647409392527
+    second: head explodes-Sheet_274
+  - first:
+      213: 2709872352076024657
+    second: head explodes-Sheet_275
+  - first:
+      213: 3723253409862085636
+    second: head explodes-Sheet_276
+  - first:
+      213: 2605749073503729691
+    second: head explodes-Sheet_277
+  - first:
+      213: -1260898621103534375
+    second: head explodes-Sheet_278
+  - first:
+      213: -1504763346253431880
+    second: head explodes-Sheet_279
+  - first:
+      213: 4670210465887840651
+    second: head explodes-Sheet_280
+  - first:
+      213: 614348807251939096
+    second: head explodes-Sheet_281
+  - first:
+      213: -2529492169871138801
+    second: head explodes-Sheet_282
+  - first:
+      213: 4906040096571488049
+    second: head explodes-Sheet_283
+  - first:
+      213: -4330193510227483493
+    second: head explodes-Sheet_284
+  - first:
+      213: -218805207145721069
+    second: head explodes-Sheet_285
+  - first:
+      213: -5760076738998711882
+    second: head explodes-Sheet_286
+  - first:
+      213: 2993712951678841090
+    second: head explodes-Sheet_287
+  - first:
+      213: 5061994766376517686
+    second: head explodes-Sheet_288
+  - first:
+      213: 6111100531974736282
+    second: head explodes-Sheet_289
+  - first:
+      213: 3768719048000144542
+    second: head explodes-Sheet_290
+  - first:
+      213: -3764802389455273751
+    second: head explodes-Sheet_291
+  - first:
+      213: 4876558547751738250
+    second: head explodes-Sheet_292
+  - first:
+      213: 4743719976891414533
+    second: head explodes-Sheet_293
+  - first:
+      213: 8298262791936813212
+    second: head explodes-Sheet_294
+  - first:
+      213: 6844259622120554778
+    second: head explodes-Sheet_295
+  - first:
+      213: -8662388455224158099
+    second: head explodes-Sheet_296
+  - first:
+      213: 7871759804492198029
+    second: head explodes-Sheet_297
+  - first:
+      213: 4274528388069907058
+    second: head explodes-Sheet_298
+  - first:
+      213: 1874723670748448716
+    second: head explodes-Sheet_299
+  - first:
+      213: -2606361891312527437
+    second: head explodes-Sheet_300
+  - first:
+      213: 805742522657545491
+    second: head explodes-Sheet_301
+  - first:
+      213: 8028194608393131985
+    second: head explodes-Sheet_302
+  - first:
+      213: -4171943575390403363
+    second: head explodes-Sheet_303
+  - first:
+      213: -8929462870006452708
+    second: head explodes-Sheet_304
+  - first:
+      213: -6159523883264291988
+    second: head explodes-Sheet_305
+  - first:
+      213: -282890590898075757
+    second: head explodes-Sheet_306
+  - first:
+      213: 3356799598884889780
+    second: head explodes-Sheet_307
+  - first:
+      213: 3415026621178994875
+    second: head explodes-Sheet_308
+  - first:
+      213: -3621671219884939087
+    second: head explodes-Sheet_309
+  - first:
+      213: -8731221692921639105
+    second: head explodes-Sheet_310
+  - first:
+      213: 2795596557808245564
+    second: head explodes-Sheet_311
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: head explodes-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c982d714a668520800000000000000
+      internalID: 2703965455787793537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cbf06cae927f2d0800000000000000
+      internalID: -3245078918175146935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c8e5d8610310e00800000000000000
+      internalID: 1009140664926899215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6a10da45f5b5450800000000000000
+      internalID: 6078556939351074523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d92dbddf65e5570800000000000000
+      internalID: 8457292798563098011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92748cbf1eb02cc0800000000000000
+      internalID: -3737778647201451362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58a4ee52e952cdf0800000000000000
+      internalID: -161467807842391970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c91541824e6d7fe0800000000000000
+      internalID: -1189673494640256572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5edeb9632290a10d0800000000000000
+      internalID: -3451436121876337179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4be92a37c7873520800000000000000
+      internalID: 2681761392866487117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27f4db31fb7d1150800000000000000
+      internalID: 5844964167417919274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229d2819c67a02f40800000000000000
+      internalID: 5701741212990626082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f01c7b90d4a0e4d0800000000000000
+      internalID: -3107302527016890120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc126bec3e9f9420800000000000000
+      internalID: 2639001891146702077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2ae24620a90cc10800000000000000
+      internalID: 2071825163651818239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcb6be48e5b8aa20800000000000000
+      internalID: 3073906755038002387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2651006cea1652d0800000000000000
+      internalID: -3290412875222264276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fed02c1f14c1b020800000000000000
+      internalID: 2355879717986426609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171871d075d955ad0800000000000000
+      internalID: -2714090203213495951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3248d7f0405cf51a0800000000000000
+      internalID: -6818514689585216477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c919c778c496202d0800000000000000
+      internalID: -3313970598379744868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5400646a9e08ad290800000000000000
+      internalID: -7864832058243809211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356629c10783daae0800000000000000
+      internalID: -1536509843696621997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e09c6ecc09902a50800000000000000
+      internalID: 6494358942950133987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4092068d34d3ae0800000000000000
+      internalID: -1568022498649766746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747dd6249242c2a20800000000000000
+      internalID: 3038843608194996039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21729f9a827b825c0800000000000000
+      internalID: -4239937663891069166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5082563e6a6efc0f0800000000000000
+      internalID: -1094402579973724155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334575beea064c0e0800000000000000
+      internalID: -2250567609389460429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c95986fff15bec0800000000000000
+      internalID: -3551897549280011250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56fd64d4788672540800000000000000
+      internalID: 4983066443035107173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b30e708812a0140800000000000000
+      internalID: 4686595230363827014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40dd4f689cc1d5e30800000000000000
+      internalID: 4493779655063821572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3a6169aa91e6ab0800000000000000
+      internalID: -5013041114763582513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6f3b60098039640800000000000000
+      internalID: 5085417818912192170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1bf95ff8b0d3b80800000000000000
+      internalID: -8413555815929106012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435368db5bb1e04c0800000000000000
+      internalID: -4319484525219007180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db879d52c2544990800000000000000
+      internalID: -7402700892742906922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d57dfa5707da6b0800000000000000
+      internalID: -5283443137072112282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 4992
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8209abf336dc72660800000000000000
+      internalID: 7361077942115012648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc2c5f1d7a186b80800000000000000
+      internalID: -8401435980160291585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 5248
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c9d693845faf5d0800000000000000
+      internalID: -3027838108903302124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e701300a6e5abd0800000000000000
+      internalID: -2619434033325507035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c996b0e00240950800000000000000
+      internalID: 6414287013975530582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bae669444c8b6940800000000000000
+      internalID: 5290476412193925808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d64097a86bf41990800000000000000
+      internalID: -7416026259465943337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 5888
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bca11cbb9ce70570800000000000000
+      internalID: 8432968980893904055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 6016
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a974d7e3d0134420800000000000000
+      internalID: 2612950711118625192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2492ea39e4aa45250800000000000000
+      internalID: 5932553863615621442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 6272
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ba889ba15863b50800000000000000
+      internalID: 6572587056022203148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb631b522d577c590800000000000000
+      internalID: -7654019496256915781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 6528
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4d3dea0b48c73a0800000000000000
+      internalID: -6666307454032947974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cee5f2182640c20800000000000000
+      internalID: 3171768344560725010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 6784
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef78e83a6bf8291d0800000000000000
+      internalID: -3345453558592010242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b36f4a8ee2f5ed40800000000000000
+      internalID: 5613159616923788211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767a6b46ed5779a80800000000000000
+      internalID: -8460163776959305881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e1b4fd23b23c6e0800000000000000
+      internalID: -1818562327032947175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 7296
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ef9332b8d974240800000000000000
+      internalID: 4775959150766718581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head explodes-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 7424
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.507, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f047d135837abd0800000000000000
+      internalID: -2619062728665067725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4516c194153f481488df01d5da07da3e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5070000290870667,"y":0.4099999964237213},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      head explodes-Sheet_0: 2703965455787793537
+      head explodes-Sheet_1: -3245078918175146935
+      head explodes-Sheet_10: 5844964167417919274
+      head explodes-Sheet_11: 5701741212990626082
+      head explodes-Sheet_12: -3107302527016890120
+      head explodes-Sheet_13: 2639001891146702077
+      head explodes-Sheet_14: 2071825163651818239
+      head explodes-Sheet_15: 3073906755038002387
+      head explodes-Sheet_16: -3290412875222264276
+      head explodes-Sheet_17: 2355879717986426609
+      head explodes-Sheet_18: -2714090203213495951
+      head explodes-Sheet_19: -6818514689585216477
+      head explodes-Sheet_2: 1009140664926899215
+      head explodes-Sheet_20: -3313970598379744868
+      head explodes-Sheet_21: -7864832058243809211
+      head explodes-Sheet_22: -1536509843696621997
+      head explodes-Sheet_23: 6494358942950133987
+      head explodes-Sheet_24: -1568022498649766746
+      head explodes-Sheet_25: 3038843608194996039
+      head explodes-Sheet_26: -4239937663891069166
+      head explodes-Sheet_27: -1094402579973724155
+      head explodes-Sheet_28: -2250567609389460429
+      head explodes-Sheet_29: -3551897549280011250
+      head explodes-Sheet_3: 6078556939351074523
+      head explodes-Sheet_30: 4983066443035107173
+      head explodes-Sheet_31: 4686595230363827014
+      head explodes-Sheet_32: 4493779655063821572
+      head explodes-Sheet_33: -5013041114763582513
+      head explodes-Sheet_34: 5085417818912192170
+      head explodes-Sheet_35: -8413555815929106012
+      head explodes-Sheet_36: -4319484525219007180
+      head explodes-Sheet_37: -7402700892742906922
+      head explodes-Sheet_38: -5283443137072112282
+      head explodes-Sheet_39: 7361077942115012648
+      head explodes-Sheet_4: 8457292798563098011
+      head explodes-Sheet_40: -8401435980160291585
+      head explodes-Sheet_41: -3027838108903302124
+      head explodes-Sheet_42: -2619434033325507035
+      head explodes-Sheet_43: 6414287013975530582
+      head explodes-Sheet_44: 5290476412193925808
+      head explodes-Sheet_45: -7416026259465943337
+      head explodes-Sheet_46: 8432968980893904055
+      head explodes-Sheet_47: 2612950711118625192
+      head explodes-Sheet_48: 5932553863615621442
+      head explodes-Sheet_49: 6572587056022203148
+      head explodes-Sheet_5: -3737778647201451362
+      head explodes-Sheet_50: -7654019496256915781
+      head explodes-Sheet_51: -6666307454032947974
+      head explodes-Sheet_52: 3171768344560725010
+      head explodes-Sheet_53: -3345453558592010242
+      head explodes-Sheet_54: 5613159616923788211
+      head explodes-Sheet_55: -8460163776959305881
+      head explodes-Sheet_56: -1818562327032947175
+      head explodes-Sheet_57: 4775959150766718581
+      head explodes-Sheet_58: -2619062728665067725
+      head explodes-Sheet_6: -161467807842391970
+      head explodes-Sheet_7: -1189673494640256572
+      head explodes-Sheet_8: -3451436121876337179
+      head explodes-Sheet_9: 2681761392866487117
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
