@@ -4,7 +4,7 @@ public class Menu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(7);
     }
 
     public void QuitGame()
@@ -26,5 +26,5 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
-
+    
 }
