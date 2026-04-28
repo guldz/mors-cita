@@ -12,5 +12,19 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
+    public void Controls()
+    {
+        SceneManager.LoadSceneAsync(5);
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadSceneAsync(6);
+    }
+
+    public void menu()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 
 }
