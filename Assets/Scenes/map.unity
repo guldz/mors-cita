@@ -438,6 +438,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8473ccd00ddcbf45b10e912c38e7ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunController
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
+  reloadSound: {fileID: 0}
+  emptySound: {fileID: 0}
   maxAmmo: 8
   useAmmo: 0
   ammoCounter: {fileID: 0}
@@ -10749,6 +10753,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8473ccd00ddcbf45b10e912c38e7ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunController
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
+  reloadSound: {fileID: 0}
+  emptySound: {fileID: 0}
   maxAmmo: 8
   useAmmo: 0
   ammoCounter: {fileID: 0}
@@ -47708,6 +47716,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8473ccd00ddcbf45b10e912c38e7ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunController
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
+  reloadSound: {fileID: 0}
+  emptySound: {fileID: 0}
   maxAmmo: 8
   useAmmo: 0
   ammoCounter: {fileID: 0}
@@ -48271,6 +48283,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8473ccd00ddcbf45b10e912c38e7ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunController
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
+  reloadSound: {fileID: 0}
+  emptySound: {fileID: 0}
   maxAmmo: 8
   useAmmo: 0
   ammoCounter: {fileID: 0}
@@ -51261,6 +51277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8473ccd00ddcbf45b10e912c38e7ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunController
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
+  reloadSound: {fileID: 0}
+  emptySound: {fileID: 0}
   maxAmmo: 8
   useAmmo: 0
   ammoCounter: {fileID: 0}
@@ -52202,6 +52222,8 @@ GameObject:
   - component: {fileID: 1613868349}
   - component: {fileID: 1613868357}
   - component: {fileID: 1613868358}
+  - component: {fileID: 1613868359}
+  - component: {fileID: 1613868360}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -52301,6 +52323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8473ccd00ddcbf45b10e912c38e7ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  audioSource: {fileID: 1613868359}
+  shootSound: {fileID: 8300000, guid: 6c6d54c80ca5f3d45a6118acb6c9bf54, type: 3}
+  reloadSound: {fileID: 8300000, guid: e208f3d0308afa24290e2aad18fda00a, type: 3}
+  emptySound: {fileID: 8300000, guid: 6e6f3cd51024d7e47b1b685872ef3757, type: 3}
   maxAmmo: 8
   useAmmo: 1
   ammoCounter: {fileID: 1906575178}
@@ -52496,6 +52522,200 @@ MonoBehaviour:
     DissipationDistance: 100
     PropagationSpeed: 343
   DefaultVelocity: {x: 0.1, y: 0.1, z: 0.5}
+--- !u!82 &1613868359
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613868348}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1613868360
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613868348}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1632690973
 GameObject:
   m_ObjectHideFlags: 0
@@ -55153,6 +55373,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8473ccd00ddcbf45b10e912c38e7ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunController
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
+  reloadSound: {fileID: 0}
+  emptySound: {fileID: 0}
   maxAmmo: 8
   useAmmo: 0
   ammoCounter: {fileID: 0}

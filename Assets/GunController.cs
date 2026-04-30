@@ -7,6 +7,12 @@ using UnityEngine.UI;
 
 public class GunController : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip reloadSound;
+    [SerializeField] private AudioClip emptySound;
+
     [Header("Ammo")]
     [SerializeField] private int maxAmmo = 8;
     [SerializeField] private bool useAmmo = true;
@@ -63,7 +69,12 @@ public class GunController : MonoBehaviour
         {
             Reload();
             animator.SetTrigger("Reload");
+            if (audioSource != null && reloadSound != null)
+            {
+                audioSource.PlayOneShot(reloadSound);
+            }
         }
+        
     }
 
 
@@ -72,12 +83,23 @@ public class GunController : MonoBehaviour
         if (!canShoot) return;
         if (cooldownTimer < cooldown) return;
 
-        if (useAmmo && currentAmmo <= 0) return;
-
+        if (useAmmo && currentAmmo <= 0)
+        {
+            if (audioSource != null && emptySound != null)
+            {
+                audioSource.PlayOneShot(emptySound);
+            }
+            return;
+        }
         cooldownTimer = 0f;
 
         if (useAmmo)
             currentAmmo--;
+
+        if (audioSource != null && shootSound != null)
+        {
+            audioSource.PlayOneShot(shootSound);
+        }
 
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag, ownerPlayer, impulseSource);

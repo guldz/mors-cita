@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Controls
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f041879c8d71c1144a29b438f449a2e7, type: 2}
   m_sharedMaterial: {fileID: 3890560191443993866, guid: f041879c8d71c1144a29b438f449a2e7, type: 2}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 127616779}
   - component: {fileID: 127616778}
   m_Layer: 5
-  m_Name: Controls
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288, y: -144}
+  m_AnchoredPosition: {x: 288, y: -335.03}
   m_SizeDelta: {x: 348.4653, y: 92.0266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127616778
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 773739750}
   - component: {fileID: 773739749}
   m_Layer: 5
-  m_Name: Credits
+  m_Name: Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,7 +527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288, y: -335}
+  m_AnchoredPosition: {x: 288, y: -150.97}
   m_SizeDelta: {x: 348.4653, y: 92.0266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773739749
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Credits
+  m_text: Controls
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f041879c8d71c1144a29b438f449a2e7, type: 2}
   m_sharedMaterial: {fileID: 3890560191443993866, guid: f041879c8d71c1144a29b438f449a2e7, type: 2}
