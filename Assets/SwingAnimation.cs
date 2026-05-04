@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class SwingAnimation : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip BatSwing;
     private Animator animator;
 
     private void Awake()
@@ -13,6 +16,7 @@ public class SwingAnimation : MonoBehaviour
     public void PlaySwing()
     {
         animator.SetTrigger("Swing");
+        audioSource.PlayOneShot(BatSwing);
     }
 }
 

@@ -14,6 +14,8 @@ public class ShooterEnemy : MonoBehaviour
 
     private State currentState;
 
+
+
     [Header("Shooting")]
     [SerializeField] private float shootinginterval = 1f;
     private float shootTimer;

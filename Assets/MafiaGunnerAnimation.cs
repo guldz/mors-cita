@@ -6,7 +6,11 @@ public class MafiaGunnerAnimation : MonoBehaviour
 {
     private Animator animator;
     private ShooterEnemy enemy;
-    
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip MachineShoot;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -23,6 +27,7 @@ public class MafiaGunnerAnimation : MonoBehaviour
     public void GunnerShoot_ani()
     {
         animator.SetTrigger("Enemy shoot");
+        audioSource.PlayOneShot(MachineShoot);
     }  
 
 

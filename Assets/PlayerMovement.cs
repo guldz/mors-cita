@@ -15,9 +15,14 @@ public class PlayerMovement : MonoBehaviour
 
     private const int DeadSortingOrder = 0;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip HitBat;
+
+    [Header("Camera Shake")]
+    [SerializeField] private CinemachineImpulseSource impulseSource;
 
 
-   
     public int playerHealth = 1;
     public float moveSpeed = 5f;
     Rigidbody2D rb;
@@ -124,7 +129,13 @@ public class PlayerMovement : MonoBehaviour
 
         isDead = true;
 
+        audioSource.PlayOneShot(HitBat);
+       
+
         animator.SetTrigger("Die");
+
+        if (impulseSource != null)
+            impulseSource.GenerateImpulse();
 
         // Push dead body behind living entities
         StartCoroutine(ApplyDeadSortingOrder());
@@ -158,6 +169,8 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("bullet hit");
 
             isDead = true;
+            if (impulseSource != null)
+                impulseSource.GenerateImpulse();
 
             // Play death animation
             animator.SetTrigger("Die");
