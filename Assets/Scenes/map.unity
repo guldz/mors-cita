@@ -46189,6 +46189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f8aaabae2657844b0ae980d8299ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MachineGunEnemy
+  isFiring: 0
   shootinginterval: 0
   radius: 17.94
   angle: 182
@@ -48643,8 +48644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690be7a58418fea40bdf7d99fab5364e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  audioSource: {fileID: 0}
-  MachineShoot: {fileID: 0}
+  audioSource: {fileID: 1943517806}
+  MachineShoot: {fileID: 8300000, guid: 5574719e2382d4843adca69abe5c080e, type: 3}
 --- !u!95 &1117669891
 Animator:
   serializedVersion: 7
@@ -54434,8 +54435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690be7a58418fea40bdf7d99fab5364e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  audioSource: {fileID: 1943517806}
-  MachineShoot: {fileID: 0}
+  audioSource: {fileID: 1684533749}
+  MachineShoot: {fileID: 8300000, guid: 5574719e2382d4843adca69abe5c080e, type: 3}
 --- !u!95 &1684533747
 Animator:
   serializedVersion: 7

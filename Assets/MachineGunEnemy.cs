@@ -13,6 +13,8 @@ public class MachineGunEnemy : MonoBehaviour
 
     private State currentState;
 
+    public bool isFiring = false;
+
     [Header("Shooting")]
     [SerializeField] private float shootinginterval = 1f;
     private float shootTimer;
@@ -113,13 +115,16 @@ public class MachineGunEnemy : MonoBehaviour
         if (Vector2.Distance(transform.position, lastKnownPosition) < stopDistance)
         {
             currentState = State.Idle;
+            isFiring = false;
         }
     }
 
     void HandleAttack()
     {
-        if (!hasLineOfSight)
+        if (!hasLineOfSight) 
         {
+            Debug.Log("see me");
+            isFiring = false; 
             currentState = State.Chase;
             return;
         }
@@ -133,12 +138,14 @@ public class MachineGunEnemy : MonoBehaviour
 
         if (shootTimer >= shootinginterval)
         {
+            isFiring = true;
             gun.Shoot();
             transform.GetChild(0).GetComponent<MafiaGunnerAnimation>().GunnerShoot_ani();
             animator.SetTrigger("Mshoot");
             gunFlash?.PlayFlash();
 
-            shootTimer = 0f;
+            shootTimer = 0.10f;
+
         }
     }
 

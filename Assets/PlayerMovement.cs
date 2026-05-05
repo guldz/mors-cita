@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float dashDuration = 0.2f;
     [SerializeField] float dashCooldown = 0f;
     private bool isDashing = false;
-    private bool isInvincible = false;
+    private bool isInvincible = true;
 
     public GameObject gameOverScreen;
 
