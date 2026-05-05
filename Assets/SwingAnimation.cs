@@ -17,6 +17,8 @@ public class SwingAnimation : MonoBehaviour
     {
         animator.SetTrigger("Swing");
         audioSource.PlayOneShot(BatSwing);
+
+
     }
 }
 

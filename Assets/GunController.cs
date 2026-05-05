@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
+
 public class GunController : MonoBehaviour
 {
     [Header("Audio")]
@@ -13,16 +14,20 @@ public class GunController : MonoBehaviour
     [SerializeField] private AudioClip reloadSound;
     [SerializeField] private AudioClip emptySound;
 
+
     [Header("Ammo")]
     [SerializeField] private int maxAmmo = 8;
     [SerializeField] private bool useAmmo = true;
     private int currentAmmo;
 
+
     [SerializeField] private AmmoCounter ammoCounter;
+
 
     [Header("Cooldown")]
     [SerializeField] private float cooldown = 0.25f;
     private float cooldownTimer;
+
 
     [Header("Refrences")]
     [SerializeField] private GameObject bulletPrefab;
@@ -32,15 +37,20 @@ public class GunController : MonoBehaviour
     [SerializeField] private MuzzleFlash muzzleFlash;
     [SerializeField] private Animator animator;
 
+
     [Header("Camera Shake")]
     [SerializeField] private CinemachineImpulseSource impulseSource;
 
+
     private bool canShoot = true;
+
 
     /// <summary>Prevents any further shots from being fired.</summary>
     public void DisableShooting() => canShoot = false;
 
+
     private PlayerMovement ownerPlayer;
+
 
     private void Awake()
     {
@@ -51,18 +61,22 @@ public class GunController : MonoBehaviour
             muzzleFlash = null;
     }
 
+
     private void Start()
     {
         currentAmmo = maxAmmo;
         UpdateUI();
 
+
         // Non-null only when this controller belongs to the player's hierarchy.
         ownerPlayer = GetComponentInParent<PlayerMovement>();
     }
 
+
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
+
 
         // Reload input
         if (Keyboard.current.rKey.wasPressedThisFrame)
@@ -74,14 +88,17 @@ public class GunController : MonoBehaviour
                 audioSource.PlayOneShot(reloadSound);
             }
         }
-        
+
     }
+
+
 
 
     public void Shoot()
     {
         if (!canShoot) return;
         if (cooldownTimer < cooldown) return;
+
 
         if (useAmmo && currentAmmo <= 0)
         {
@@ -93,41 +110,53 @@ public class GunController : MonoBehaviour
         }
         cooldownTimer = 0f;
 
+
         if (useAmmo)
             currentAmmo--;
+
 
         if (audioSource != null && shootSound != null)
         {
             audioSource.PlayOneShot(shootSound);
         }
 
+
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         bullet.GetComponent<Projectile>().ShootBullet(firepoint, gameObject.tag, ownerPlayer, impulseSource);
 
+
         muzzleFlashAnimator.SetTrigger(muzzleFlashTrigger);
+
 
         // Camera shake
         if (impulseSource != null)
             impulseSource.GenerateImpulse();
 
 
+
+
         // Only call PlayFlash if the MuzzleFlash belongs to this GameObject's own hierarchy.
         if (muzzleFlash != null && muzzleFlash.transform.IsChildOf(transform))
             muzzleFlash.PlayFlash();
 
+
         if (useAmmo)
             UpdateUI();
 
-        
+
+
     }
+
 
     public void Reload()
     {
         if (!useAmmo) return;
 
+
         currentAmmo = maxAmmo;
         UpdateUI();
     }
+
 
     private void UpdateUI()
     {
@@ -137,10 +166,17 @@ public class GunController : MonoBehaviour
 
 
 
-    #region input 
+
+
+
+
+    #region input
     public void OnShoot()
     {
-        Shoot(); 
+        Shoot();
     }
     #endregion
 }
+
+
+

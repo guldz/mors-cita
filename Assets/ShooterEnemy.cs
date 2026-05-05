@@ -3,6 +3,7 @@ using System.Collections;
 using System.Diagnostics;
 using UnityEngine;
 
+
 public class ShooterEnemy : MonoBehaviour
 {
     private enum State
@@ -12,7 +13,11 @@ public class ShooterEnemy : MonoBehaviour
         Attack
     }
 
+
     private State currentState;
+
+
+
 
 
 
@@ -21,54 +26,70 @@ public class ShooterEnemy : MonoBehaviour
     private float shootTimer;
     private GunController gun;
 
+
     [Header("Vision")]
     public float radius = 10;
     [Range(1, 360)] public float angle = 45f;
     public LayerMask targetLayer;
     public LayerMask obstructionLayer;
 
+
     [Header("Movement")]
     public float stopDistance = 0.5f;
+
 
     private GameObject playerRef;
     private AIPath ai;
 
+
     private Vector2 lastKnownPosition;
     private bool hasLineOfSight;
 
+
     public bool shMove;
     private enemyflash gunFlash;
+
 
     private Animator animator;
     public GameObject torso;
     private Collider2D enemyCollider;
 
+
     private bool shdead = false;
     public bool SHdead => shdead;
 
+
     private const int DeadSortingOrder = 0;
+
 
     void Start()
     {
-        gunFlash = GetComponentInChildren<enemyflash>(); 
+        gunFlash = GetComponentInChildren<enemyflash>();
         playerRef = GameObject.FindGameObjectWithTag("Player");
         ai = GetComponent<AIPath>();
         gun = GetComponentInChildren<GunController>();
 
+
         ai.enableRotation = false;
+
 
         currentState = State.Idle;
 
+
         StartCoroutine(FOVCheck());
 
-        animator = GetComponentInChildren<Animator>(); 
+
+        animator = GetComponentInChildren<Animator>();
         enemyCollider = GetComponent<Collider2D>();
 
+
     }
+
 
     void Update()
     {
         shootTimer += Time.deltaTime;
+
 
         switch (currentState)
         {
@@ -76,24 +97,31 @@ public class ShooterEnemy : MonoBehaviour
                 HandleIdle();
                 break;
 
+
             case State.Chase:
                 HandleChase();
                 break;
+
 
             case State.Attack:
                 HandleAttack();
                 break;
 
 
+
+
         }
         shMove = ai.canMove && ai.desiredVelocity.magnitude > 0.1f;
     }
 
-    // STATES 
+
+    // STATES
+
 
     void HandleIdle()
     {
         ai.canMove = false;
+
 
         if (hasLineOfSight)
         {
@@ -102,12 +130,15 @@ public class ShooterEnemy : MonoBehaviour
         }
     }
 
+
     void HandleChase()
     {
         ai.canMove = true;
         ai.destination = lastKnownPosition;
 
+
         RotateTowards(ai.desiredVelocity);
+
 
         if (hasLineOfSight)
         {
@@ -115,13 +146,16 @@ public class ShooterEnemy : MonoBehaviour
             return;
         }
 
+
         if (Vector2.Distance(transform.position, lastKnownPosition) < stopDistance)
         {
             currentState = State.Idle;
         }
 
-        
+
+
     }
+
 
     void HandleAttack()
     {
@@ -131,24 +165,31 @@ public class ShooterEnemy : MonoBehaviour
             return;
         }
 
+
         ai.canMove = false;
+
 
         lastKnownPosition = playerRef.transform.position;
 
+
         Vector2 dir = (playerRef.transform.position - transform.position).normalized;
         RotateTowards(dir);
+
 
         if (shootTimer >= shootinginterval)
         {
             gun.Shoot();
             transform.GetChild(0).GetComponent<MafiaGunnerAnimation>().GunnerShoot_ani();
-            
+
+
 
             shootTimer = 0f;
         }
     }
 
-    // HELPERS 
+
+    // HELPERS
+
 
     void RotateTowards(Vector2 dir)
     {
@@ -156,11 +197,14 @@ public class ShooterEnemy : MonoBehaviour
             transform.up = dir;
     }
 
-    // VISION 
+
+    // VISION
+
 
     private IEnumerator FOVCheck()
     {
         WaitForSeconds wait = new WaitForSeconds(0.2f);
+
 
         while (true)
         {
@@ -169,10 +213,12 @@ public class ShooterEnemy : MonoBehaviour
         }
     }
 
+
     private void FOV()
     {
         Collider2D[] rangeCheck =
             Physics2D.OverlapCircleAll(transform.position, radius, targetLayer);
+
 
         if (rangeCheck.Length > 0)
         {
@@ -180,10 +226,12 @@ public class ShooterEnemy : MonoBehaviour
             Vector2 directionToTarget =
                 (target.position - transform.position).normalized;
 
+
             if (Vector2.Angle(transform.up, directionToTarget) < angle / 2)
             {
                 float distanceToTarget =
                     Vector2.Distance(transform.position, target.position);
+
 
                 if (!Physics2D.Raycast(
                         transform.position,
@@ -197,8 +245,11 @@ public class ShooterEnemy : MonoBehaviour
             }
         }
 
+
         hasLineOfSight = false;
     }
+
+
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -207,38 +258,48 @@ public class ShooterEnemy : MonoBehaviour
         {
             if (shdead) return;
 
+
             shdead = true;
+
 
             // Remove bullet
             Destroy(other.gameObject);
+
 
             // Stop AI movement
             if (ai != null)
                 ai.canMove = false;
 
-            // Disable AIPath completely 
+
+            // Disable AIPath completely
             if (ai != null)
                 ai.enabled = false;
+
 
             // Disable gun
             if (gun != null)
                 gun.enabled = false;
 
+
             // Disable collider so corpse doesn't keep reacting
             if (enemyCollider != null)
                 enemyCollider.enabled = false;
+
 
             // Play death animation
             if (animator != null)
                 animator.SetTrigger("SHdead");
 
+
             // Push dead body behind living entities after the animator ticks
             StartCoroutine(ApplyDeadSortingOrder());
+
 
             // Stop this script so it doesn't keep updating states
             this.enabled = false;
         }
     }
+
 
     /// <summary>Waits one frame then forces all child SpriteRenderers behind living entities.</summary>
     private IEnumerator ApplyDeadSortingOrder()
@@ -252,27 +313,37 @@ public class ShooterEnemy : MonoBehaviour
 
 
 
+
+
+
+
+
     private void OnDrawGizmos()
     {
         // Draw detection radius
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position, radius);
 
+
         // Forward direction
         Vector3 forward = transform.up;
+
 
         // Left and right cone edges
         Vector3 leftBoundary = Quaternion.Euler(0, 0, angle / 2) * forward;
         Vector3 rightBoundary = Quaternion.Euler(0, 0, -angle / 2) * forward;
+
 
         // Vision cone
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, transform.position + leftBoundary * radius);
         Gizmos.DrawLine(transform.position, transform.position + rightBoundary * radius);
 
+
         // Forward look line
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + forward * radius);
+
 
         // Line to player if detected
         if (hasLineOfSight && playerRef != null)
@@ -282,11 +353,11 @@ public class ShooterEnemy : MonoBehaviour
         }
 
 
+
+
     }
 
 
+
+
 }
-
-
-
-

@@ -140,7 +140,7 @@ public class MachineGunEnemy : MonoBehaviour
         {
             isFiring = true;
             gun.Shoot();
-            transform.GetChild(0).GetComponent<MafiaGunnerAnimation>().GunnerShoot_ani();
+            transform.GetChild(0).GetComponent<MachineGunnerAnimation>().GunnerShoot_ani();
             animator.SetTrigger("Mshoot");
             gunFlash?.PlayFlash();
 

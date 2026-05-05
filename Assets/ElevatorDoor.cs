@@ -6,6 +6,10 @@ public class ElevatorDoor : MonoBehaviour
     public Animator elevatordoorAnimator;
     public Collider2D doorCollider;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip Elevator;
+
     private bool isOpening = false; // prevents multiple triggers
 
     public void DisableCollider()
@@ -29,6 +33,7 @@ public class ElevatorDoor : MonoBehaviour
             if (playerAnimator != null)
             {
                 playerAnimator.SetTrigger("Press");
+                audioSource.PlayOneShot(Elevator);
             }
 
             StartCoroutine(OpenDoorWithDelay());

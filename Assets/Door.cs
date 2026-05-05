@@ -4,7 +4,11 @@ public class Door : MonoBehaviour
 {
     public Animator doorAnimator;
     public Collider2D doorCollider;
-    
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip DoorPunch;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -17,6 +21,7 @@ public class Door : MonoBehaviour
         if (playerAnimator != null)
         {
             playerAnimator.SetTrigger("Punch");
+            audioSource.PlayOneShot(DoorPunch);
         }
     }
 }
