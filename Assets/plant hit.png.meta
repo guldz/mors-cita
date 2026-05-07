@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 95dce4c8a33eb1249b252bdd79db7a2f
+guid: ec7d8dd0bb8824845826811ae43ffac3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8971373182833571045
-    second: le toilet_0
+      213: -9021465191243754000
+    second: plant hit_0
+  - first:
+      213: 3535699038264825664
+    second: plant hit_1
+  - first:
+      213: -8234359435369251643
+    second: plant hit_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: le toilet_0
+      name: plant hit_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 11
+        y: 11
+        width: 42
+        height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1b4db16f974f7380800000000000000
-      internalID: -8971373182833571045
+      spriteID: 0f55d52d4315dc280800000000000000
+      internalID: -9021465191243754000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant hit_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0471778da83511130800000000000000
+      internalID: 3535699038264825664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant hit_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 11
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ccfde598bda9bd80800000000000000
+      internalID: -8234359435369251643
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4262274292026ef40b09ad0ce0dae153
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -133,11 +183,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      le toilet_0: -8971373182833571045
+      plant hit_0: -9021465191243754000
+      plant hit_1: 3535699038264825664
+      plant hit_2: -8234359435369251643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
