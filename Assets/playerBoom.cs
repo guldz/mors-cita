@@ -1,10 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class playerBoom : MonoBehaviour
 {
     [SerializeField] private Animator boomAnimator;
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,6 +19,7 @@ public class playerBoom : MonoBehaviour
 
         if (boomAnimator != null)
             boomAnimator.SetTrigger("Boom");
+        
 
         StartCoroutine(LoadSceneAfterDelay(2f)); // match animation length
     }

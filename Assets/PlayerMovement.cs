@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip HitBat;
+    [SerializeField] private AudioClip PlayerBoom;
 
     [Header("Camera Shake")]
     [SerializeField] private CinemachineImpulseSource impulseSource;
@@ -202,6 +203,7 @@ public class PlayerMovement : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
+        audioSource.PlayOneShot(PlayerBoom);
 
         // Disable legs so the player cannot move or rotate them
         if (legs != null)
