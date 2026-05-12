@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isDead = false;
     public bool IsDead => isDead;
 
+    public bool freezePlayer; 
+
     private const int DeadSortingOrder = 0;
 
     [Header("Audio")]
@@ -107,6 +109,7 @@ public class PlayerMovement : MonoBehaviour
     {
         dashCooldown = 0f;
     }
+
 
     private void LookAtMouse()
     {

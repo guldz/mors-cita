@@ -1,0 +1,1006 @@
+fileFormatVersion: 2
+guid: 1a3a41334d6face4c8a16dd0122b0c4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2148210171914442324
+    second: CAR(1)-Sheett_0
+  - first:
+      213: -8845554359603861267
+    second: CAR(1)-Sheett_1
+  - first:
+      213: 914251445269045442
+    second: CAR(1)-Sheett_2
+  - first:
+      213: 1316261257660710245
+    second: CAR(1)-Sheett_3
+  - first:
+      213: 3940953304459262379
+    second: CAR(1)-Sheett_4
+  - first:
+      213: 5269816504635564664
+    second: CAR(1)-Sheett_5
+  - first:
+      213: -6489553107161299697
+    second: CAR(1)-Sheett_6
+  - first:
+      213: -5072805784239650938
+    second: CAR(1)-Sheett_7
+  - first:
+      213: -4629866560174147964
+    second: CAR(1)-Sheett_8
+  - first:
+      213: -6814606573767615373
+    second: CAR(1)-Sheett_9
+  - first:
+      213: 3960409139587672983
+    second: CAR(1)-Sheett_10
+  - first:
+      213: -2366485110708016748
+    second: CAR(1)-Sheett_11
+  - first:
+      213: 7446716887768431990
+    second: CAR(1)-Sheett_12
+  - first:
+      213: -5461617720401109477
+    second: CAR(1)-Sheett_13
+  - first:
+      213: 5124510127058983334
+    second: CAR(1)-Sheett_14
+  - first:
+      213: -4586377789243338020
+    second: CAR(1)-Sheett_15
+  - first:
+      213: -1415666626288398583
+    second: CAR(1)-Sheett_16
+  - first:
+      213: -3101418143399998494
+    second: CAR(1)-Sheett_17
+  - first:
+      213: 7150048381706071610
+    second: CAR(1)-Sheett_18
+  - first:
+      213: 6856014675767155300
+    second: CAR(1)-Sheett_19
+  - first:
+      213: -5938374481561674350
+    second: CAR(1)-Sheett_20
+  - first:
+      213: 7388847896169945623
+    second: CAR(1)-Sheett_21
+  - first:
+      213: -6248780097763276321
+    second: CAR(1)-Sheett_22
+  - first:
+      213: 692758457717747022
+    second: CAR(1)-Sheett_23
+  - first:
+      213: 1102381568461793216
+    second: CAR(1)-Sheett_24
+  - first:
+      213: 4167111277405933476
+    second: CAR(1)-Sheett_25
+  - first:
+      213: 2866383461044694891
+    second: CAR(1)-Sheett_26
+  - first:
+      213: -4364466753427533301
+    second: CAR(1)-Sheett_27
+  - first:
+      213: -8224451084579047310
+    second: CAR(1)-Sheett_28
+  - first:
+      213: -8932781431581261244
+    second: CAR(1)-Sheett_29
+  - first:
+      213: 8575578568222144956
+    second: CAR(1)-Sheett_30
+  - first:
+      213: -876069846332793330
+    second: CAR(1)-Sheett_31
+  - first:
+      213: 3929312860008289578
+    second: CAR(1)-Sheett_32
+  - first:
+      213: 3634978108418970131
+    second: CAR(1)-Sheett_33
+  - first:
+      213: 4455986686818296390
+    second: CAR(1)-Sheett_34
+  - first:
+      213: 438069354123490056
+    second: CAR(1)-Sheett_35
+  - first:
+      213: 9068783712939590891
+    second: CAR(1)-Sheett_36
+  - first:
+      213: -8606294923160619433
+    second: CAR(1)-Sheett_37
+  - first:
+      213: 6079898997208870313
+    second: CAR(1)-Sheett_38
+  - first:
+      213: 311434018543043317
+    second: CAR(1)-Sheett_39
+  - first:
+      213: -1816294009857012903
+    second: CAR(1)-Sheett_40
+  - first:
+      213: -5668731001841834600
+    second: CAR(1)-Sheett_41
+  - first:
+      213: 2819390666824693197
+    second: CAR(1)-Sheett_42
+  - first:
+      213: 3750061349385809252
+    second: CAR(1)-Sheett_43
+  - first:
+      213: 4340069174420637370
+    second: CAR(1)-Sheett_44
+  - first:
+      213: 8473164728747460585
+    second: CAR(1)-Sheett_45
+  - first:
+      213: 6636419143924037295
+    second: CAR(1)-Sheett_46
+  - first:
+      213: 4278528471798583986
+    second: CAR(1)-Sheett_47
+  - first:
+      213: 5168810745854816234
+    second: CAR(1)-Sheett_48
+  - first:
+      213: -6429965302971878367
+    second: CAR(1)-Sheett_49
+  - first:
+      213: 2335999203423962309
+    second: CAR(1)-Sheett_50
+  - first:
+      213: -3904585379845759744
+    second: CAR(1)-Sheett_51
+  - first:
+      213: 4429352624146969128
+    second: CAR(1)-Sheett_52
+  - first:
+      213: 4915100875705281353
+    second: CAR(1)-Sheett_53
+  - first:
+      213: 3957446924816425126
+    second: CAR(1)-Sheett_54
+  - first:
+      213: 6567819967516393702
+    second: CAR(1)-Sheett_55
+  - first:
+      213: 2907118381826107367
+    second: CAR(1)-Sheett_56
+  - first:
+      213: 9097738153875015181
+    second: CAR(1)-Sheett_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9a828fa360032e0800000000000000
+      internalID: -2148210171914442324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8676afc274e3580800000000000000
+      internalID: -8845554359603861267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c026a678d210bc00800000000000000
+      internalID: 914251445269045442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56db976d3ac444210800000000000000
+      internalID: 1316261257660710245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba932bc762411b630800000000000000
+      internalID: 3940953304459262379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8722b46b036222940800000000000000
+      internalID: 5269816504635564664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f054e9805d970f5a0800000000000000
+      internalID: -6489553107161299697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68749df1406c999b0800000000000000
+      internalID: -5072805784239650938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4863c53c4e86fbfb0800000000000000
+      internalID: -4629866560174147964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c1a8e2d67ad61a0800000000000000
+      internalID: -6814606573767615373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b655a112336f630800000000000000
+      internalID: 3960409139587672983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_11
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4996ff9745e882fd0800000000000000
+      internalID: -2366485110708016748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67df6561e8d085760800000000000000
+      internalID: 7446716887768431990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e5384ce9f6434b0800000000000000
+      internalID: -5461617720401109477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a91e3b4fcaed1740800000000000000
+      internalID: 5124510127058983334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2d86a43b9e950c0800000000000000
+      internalID: -4586377789243338020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_16
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f44b334ba8a5ce0800000000000000
+      internalID: -1415666626288398583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_17
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb01be61ac85f4d0800000000000000
+      internalID: -3101418143399998494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e627ede131a3360800000000000000
+      internalID: 7150048381706071610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_19
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a57fbd505752f50800000000000000
+      internalID: 6856014675767155300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_20
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d95433fd7a69da0800000000000000
+      internalID: -5938374481561674350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_21
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a1a9683067a8660800000000000000
+      internalID: 7388847896169945623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_22
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd90a49cb9fd749a0800000000000000
+      internalID: -6248780097763276321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_23
+      rect:
+        serializedVersion: 2
+        x: 5888
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4de96b952c2d9900800000000000000
+      internalID: 692758457717747022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_24
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c76a1322327c4f00800000000000000
+      internalID: 1102381568461793216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_25
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af0e45e0ad84d930800000000000000
+      internalID: 4167111277405933476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_26
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6faf91329077c720800000000000000
+      internalID: 2866383461044694891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_27
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0213f79c9c4e63c0800000000000000
+      internalID: -4364466753427533301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_28
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278f6174051ecdd80800000000000000
+      internalID: -8224451084579047310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_29
+      rect:
+        serializedVersion: 2
+        x: 7424
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442c46aad92680480800000000000000
+      internalID: -8932781431581261244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAR(1)-Sheett_30
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.47, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9755eb543920770800000000000000
+      internalID: 8575578568222144956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b7a1f57527d69c649bba048f3e7fc0cc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.4699999988079071,"y":0.6399999856948853},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      CAR(1)-Sheett_0: -2148210171914442324
+      CAR(1)-Sheett_1: -8845554359603861267
+      CAR(1)-Sheett_10: 3960409139587672983
+      CAR(1)-Sheett_11: -2366485110708016748
+      CAR(1)-Sheett_12: 7446716887768431990
+      CAR(1)-Sheett_13: -5461617720401109477
+      CAR(1)-Sheett_14: 5124510127058983334
+      CAR(1)-Sheett_15: -4586377789243338020
+      CAR(1)-Sheett_16: -1415666626288398583
+      CAR(1)-Sheett_17: -3101418143399998494
+      CAR(1)-Sheett_18: 7150048381706071610
+      CAR(1)-Sheett_19: 6856014675767155300
+      CAR(1)-Sheett_2: 914251445269045442
+      CAR(1)-Sheett_20: -5938374481561674350
+      CAR(1)-Sheett_21: 7388847896169945623
+      CAR(1)-Sheett_22: -6248780097763276321
+      CAR(1)-Sheett_23: 692758457717747022
+      CAR(1)-Sheett_24: 1102381568461793216
+      CAR(1)-Sheett_25: 4167111277405933476
+      CAR(1)-Sheett_26: 2866383461044694891
+      CAR(1)-Sheett_27: -4364466753427533301
+      CAR(1)-Sheett_28: -8224451084579047310
+      CAR(1)-Sheett_29: -8932781431581261244
+      CAR(1)-Sheett_3: 1316261257660710245
+      CAR(1)-Sheett_30: 8575578568222144956
+      CAR(1)-Sheett_4: 3940953304459262379
+      CAR(1)-Sheett_5: 5269816504635564664
+      CAR(1)-Sheett_6: -6489553107161299697
+      CAR(1)-Sheett_7: -5072805784239650938
+      CAR(1)-Sheett_8: -4629866560174147964
+      CAR(1)-Sheett_9: -6814606573767615373
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
