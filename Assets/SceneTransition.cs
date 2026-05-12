@@ -41,6 +41,24 @@ public class SceneTransition : MonoBehaviour
         StartCoroutine(TransitionRoutine(sceneName));
     }
 
+    /// <summary>Fades out then fades back in without loading a new scene.</summary>
+    public IEnumerator FadeOutAndIn()
+    {
+        yield return StartCoroutine(Fade(0f, 1f));
+        yield return StartCoroutine(Fade(1f, 0f));
+    }
+
+    /// <summary>
+    /// Fades to black, invokes <paramref name="onBlack"/> at peak black, then fades back in.
+    /// Use this to swap scene state invisibly during the black frame.
+    /// </summary>
+    public IEnumerator FadeOutAndIn(System.Action onBlack)
+    {
+        yield return StartCoroutine(Fade(0f, 1f));
+        onBlack?.Invoke();
+        yield return StartCoroutine(Fade(1f, 0f));
+    }
+
     private IEnumerator TransitionRoutine(string sceneName)
     {
         yield return StartCoroutine(Fade(0f, 1f));

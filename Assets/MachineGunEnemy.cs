@@ -209,8 +209,6 @@ public class MachineGunEnemy : MonoBehaviour
 
             shdead = true;
 
-            Destroy(other.gameObject);
-
             if (ai != null)
                 ai.canMove = false;
 

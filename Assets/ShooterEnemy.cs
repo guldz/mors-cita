@@ -258,42 +258,30 @@ public class ShooterEnemy : MonoBehaviour
         {
             if (shdead) return;
 
-
             shdead = true;
-
-
-            // Remove bullet
-            Destroy(other.gameObject);
-
 
             // Stop AI movement
             if (ai != null)
                 ai.canMove = false;
 
-
             // Disable AIPath completely
             if (ai != null)
                 ai.enabled = false;
-
 
             // Disable gun
             if (gun != null)
                 gun.enabled = false;
 
-
             // Disable collider so corpse doesn't keep reacting
             if (enemyCollider != null)
                 enemyCollider.enabled = false;
-
 
             // Play death animation
             if (animator != null)
                 animator.SetTrigger("SHdead");
 
-
             // Push dead body behind living entities after the animator ticks
             StartCoroutine(ApplyDeadSortingOrder());
-
 
             // Stop this script so it doesn't keep updating states
             this.enabled = false;

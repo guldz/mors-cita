@@ -153,9 +153,6 @@ public class lookatplayerscript : MonoBehaviour
 
             mafiaDead = true;
 
-            // Remove bullet
-            Destroy(other.gameObject);
-
             // Stop movement
             ai.canMove = false;
             this.enabled = false; // disables this script AFTER current frame
