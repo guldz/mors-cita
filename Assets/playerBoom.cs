@@ -19,7 +19,10 @@ public class playerBoom : MonoBehaviour
 
         if (boomAnimator != null)
             boomAnimator.SetTrigger("Boom");
-        
+
+        // Stop background music
+        if (Music.instance != null)
+            Music.instance.StopMusic();
 
         StartCoroutine(LoadSceneAfterDelay(2f)); // match animation length
     }

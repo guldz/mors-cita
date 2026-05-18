@@ -11,6 +11,7 @@ TagManager:
   - Prop
   - Teleporter
   - interact prop
+  - Music
   layers:
   - Default
   - TransparentFX
